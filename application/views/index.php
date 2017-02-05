@@ -29,29 +29,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </div>
 </nav>
 </div>
-<div class = "cont"><div style = "font-family: Charlemagne STD;" ><div class="glitch" data-text="REALITY REALM">REALITY REALM</div>
+<div class = "cont">
+<div style = "font-family: Charlemagne STD;" >
+<div class="glitch" data-text="REALITY REALM">REALITY REALM</div>
 </div>
 </div> 
-	<div style="margin-top: 300px; background-color:red;font-size:36px">
+<div id = "summary"><a href= "nexus/game">LAAAAAAAAAAAAAAAAAAAAAAAAAH</a>
 Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-
+This div is just here to enable scrolling. Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling. Scroll Up and Down this page to see the parallax scrolling effect. This div is just here to enable scrolling.
 </div>
 </body>
 </html>

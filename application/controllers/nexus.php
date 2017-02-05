@@ -22,4 +22,9 @@ class nexus extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
+	
+	public function game()
+	{
+		$this->load->view('qwer');
+	}
 }
