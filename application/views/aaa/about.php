@@ -19,8 +19,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <a class="navbar-brand" href="#">Reality Realm</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="<?php echo current_url() ?>">Home</a></li>
-      <li><a href="<?php echo site_url('welcome/about'); ?>">About</a></li>
+      <li class="active"><a href="<?php echo site_url('index.php') ?>">Home</a></li>
+      <li><a href="#">Developers</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">

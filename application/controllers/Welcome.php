@@ -22,10 +22,14 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
+
 	public function qwer()
 	{
 		$this->load->view('gg/qwer');
 	}
 	
-	
+	public function about()
+	{
+		$this->load->view('aaa/about');
+	}
 }
