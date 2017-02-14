@@ -30,6 +30,78 @@ class Welcome extends CI_Controller {
 	
 	public function about()
 	{
-		$this->load->view('aaa/about');
+		$this->load->view('about');
+	}
+
+	public function contact()
+	{
+		$this->load->view('contact');
+	}
+
+	public function register()
+	{	
+		$this->load->helper(array('form', 'url'));
+		
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]|max_length[20]|is_unique[users.username]');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]|max_length[20]|matches[cpassword]');
+		$this->form_validation->set_rules('cpassword', 'Confirm Password', 'trim|required|min_length[3]|max_length[20]');
+		$this->form_validation->set_rules('fname', 'First Name', 'trim|required|min_length[3]|max_length[40]');
+		$this->form_validation->set_rules('lname', 'Last Name', 'trim|required|min_length[3]|max_length[20]');
+				
+		if ($this->form_validation->run() == FALSE)
+		{
+			$this->load->view('index');
+		}
+		else
+		{
+			$this->load->model('users_model');
+			
+			if($this->input->post()) {
+				$data = $this->input->post();
+				$result = $this->users_model->add($data);
+				redirect('welcome/index/');
+		}
+		}
+		
+	}
+
+public function Login()
+	{
+			$this->load->helper(array('form', 'url'));
+			$this->load->library('form_validation');
+			$this->form_validation->set_error_delimiters('<div class="error">', '</div>');
+			$this->form_validation->set_rules('username', 'Username', 'required');
+			$this->form_validation->set_rules('password', 'Password', 'required');
+		
+		if ($this->form_validation->run() == FALSE)
+			{
+				$this->load->view('welcome/index');
+			}
+		
+		
+		else
+		{
+			if ($this->input->post())
+			{
+				$this->load->model('Users_model');				
+				$data = $this->input->post();
+				$this->Users_model->login($data['username'], $data ['password']);
+		
+				$result=$this->Users_model->login($data['username'], $data ['password']);
+				
+				if(!$result) {
+					redirect('welcome/contact');
+				}
+				
+				else {
+					echo 'noob';
+				}
+				
+				echo $result;
+				exit();
+			}
+		}
+		
 	}
 }

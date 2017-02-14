@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <li class="w3-hide-small"><a href="<?php echo site_url('welcome/index') ?>">Home</a></li>
   <li class="w3-hide-small"><a href="<?php echo site_url('welcome/about') ?>">About</a></li>
   <li class="w3-hide-small"><a href="<?php echo site_url('welcome/contact') ?>">Contact Us</a></li>
-  <li class="w3-right"><a href="#" id="myBtn2"><i class="fa fa-sign-in"></i> Log In</a></li>
-  <li class="w3-right"><a href="#" id="myBtn1"><i class="fa fa-user-circle"></i> Sign Up</a></li>
+  <li class="w3-right"><a href="#" onclick="document.getElementById('id02').style.display='block'"><i class="fa fa-sign-in"></i> Log In</a></li>
+  <li class="w3-right"><a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-user-circle"></i> Sign Up</a></li>
 
 </ul>
 
@@ -39,12 +39,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
   </div>
    
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#" id="myBtn1"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#" id="myBtn2"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
 </div>
 <div class = "cont">
 <div style = "font-family: Charlemagne STD;" >
@@ -86,56 +80,64 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </center>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="id01" class="w3-modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom" style = "width: 50%;">
+    <header class = "w3-container w3-teal" style = "padding-bottom: 10px;">
+    <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
+        <h2>Register!</h2>
+    </header>
+    <div class = "w3-container contento" style = "padding: 20px;">
     <form method="POST" action="register">
-    <table class = "teburu">
+    <table class = "w3-table">
       <tr>
         <td>Username: </td>
-        <td><input id="user" type="text" name="username" placeholder = "Enter username"><br/><br/></td>
+        <td><input  class = "w3-input" id="user" type="text" name="username" placeholder = "Enter username"><br/><br/></td>
       </tr>
       <tr>
         <td>Password: </td>
-        <td><input id="user" type="password" name="password" placeholder = "Enter password"><br/><br/></td>
+        <td><input class = "w3-input" id="user" type="password" name="password" placeholder = "Enter password"><br/><br/></td>
       </tr>
       <tr>
         <td>Confirm Password: </td>
-        <td><input id="user" type="password" name="cpassword" placeholder = "Confirm password"><br/><br/></td>
+        <td><input class = "w3-input" id="user" type="password" name="cpassword" placeholder = "Confirm password"><br/><br/></td>
       </tr>
       <tr>
         <td>First Name:</td>
-        <td><input id="user" type="text" name="fname" placeholder = "Enter first name"><br/><br/></td>
+        <td><input class = "w3-input" id="user" type="text" name="fname" placeholder = "Enter first name"><br/><br/></td>
       </tr>
       <tr>
         <td>Last Name: </td>
-        <td><input id="user" type="text" name="lname" placeholder = "Enter last name"><br/><br/></td>
+        <td><input class = "w3-input" id="user" type="text" name="lname" placeholder = "Enter last name"><br/><br/></td>
       </tr>      
     </table>
     <center><input type="Submit" Value="Register!"/><br></center>
     </form>
     <?php echo validation_errors('<p class = "error">'); ?>
   </div>
-
 </div>
-
+</div>
 
 <!-- The Modal -->
-<div id="myModal2" class="modal">
+<div id="id02" class="w3-modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close2">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom" style="width: 20%;">
+    <header class = "w3-container w3-teal">
+    <span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn">&times;</span>
+        <h2>Log in!</h2>
+    </header>
+    <div class = "w3-container contento" style = "padding: 20px 50px;">
     <form method="POST" action="Login">
-      Username: <input id="user" type="text" name="username" placeholder = "Enter username"><br/><br/>
+      Username: <input id="user" type="text" name="username" placeholder = "Enter username"><br/>
       Password: &#8202 <input id="pass" type="password" name="password" placeholder = "Enter password"><br/>
-      <center><input type="Submit" Value="Login"/><br></center>
+      <br>
+      <center><input type="Submit" Value="Login"/><br></center>    
     </form>
+    </div>
   </div>
 </div>
-
 
 <br><br>
 <hr>
@@ -144,42 +146,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-var modal2 = document.getElementById('myModal2');
-// Get the button that opens the modal
-var btn1 = document.getElementById("myBtn1");
-var btn2 = document.getElementById("myBtn2");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-var span2 = document.getElementsByClassName("close2")[0];
-
-// When the user clicks the button, open the modal 
-btn1.onclick = function() {
-    modal.style.display = "block";
-}
-
-btn2.onclick = function() {
-    modal2.style.display = "block";
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-span2.onclick = function() {
-    modal2.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}
 
 function myFunction() {
     var x = document.getElementById("demo");

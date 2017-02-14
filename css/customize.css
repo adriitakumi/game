@@ -302,3 +302,17 @@ hr {
   display: inline-block;
   vertical-align: top;
 }
+
+.content {
+  color: black;
+  width: 20%;
+}
+
+.contento {
+  padding: 50px;
+  color: black;
+}
+
+.teburu {
+  color: black;
+}
