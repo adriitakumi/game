@@ -298,9 +298,7 @@ hr {
 }
 
 .tekusuto {
-  text-align: left;
-  display: inline-block;
-  vertical-align: top;
+  font-family: Charlemagne STD;
 }
 
 .content {
@@ -315,4 +313,5 @@ hr {
 
 .teburu {
   color: black;
+  
 }

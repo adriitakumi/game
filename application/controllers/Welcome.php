@@ -60,7 +60,8 @@ class Welcome extends CI_Controller {
 			if($this->input->post()) {
 				$data = $this->input->post();
 				$result = $this->users_model->add($data);
-				redirect('welcome/index/');
+				echo '<script>window.alert("You may now log in!");</script>';
+				redirect('welcome/index/', 'refresh');
 		}
 		}
 		

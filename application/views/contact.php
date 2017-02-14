@@ -88,11 +88,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
         <h2>Register!</h2>
     </header>
-    <div class = "w3-container contento" style = "padding: 20px;">
+    <div class = "w3-container w3-row-padding contento" style = "padding: 20px;">
     <form method="POST" action="register">
-    <table class = "w3-table">
-      <tr>
-        <td>Username: </td>
+    <label>Username:</label>
         <td><input  class = "w3-input" id="user" type="text" name="username" placeholder = "Enter username"><br/><br/></td>
       </tr>
       <tr>
