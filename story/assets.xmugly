@@ -1,0 +1,80 @@
+
+. textbox name tb_main, x 50%, xAnchor 50%, y 100%, yAnchor 100%, width 50%, height 160px, speed 30, +namebox
+
+. character name n, textbox tb_main
+
+. character name a, textbox tb_main :
+    . displayname :
+        Anmum
+    --
+--
+
+. character name n, textbox tb_main :
+    . displayname :
+        Nido
+    --
+--
+
+. character name j, textbox tb_main :
+    . displayname :
+        Jack
+    --
+--
+
+. imagepack name backgrounds, x 0, y 0, z 5, width 1366px :
+    . image src assets/images/daytime_clouds_A_01.jpg, name clouds01
+    . image src assets/images/Evening_clouds_C_01.jpg, name clouds02
+    . image src assets/images/Rainbow_A_01.jpg, name rainbow
+    . image src assets/images/sunsetintheswamp.png, name sunset
+    . image src assets/images/qwe.jpg, name house
+--
+
+. imagepack name anmum, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/anmum/aaa.png, name smile
+    . image src assets/images/anmum/margaret_ambition.png, name scheming
+    . image src assets/images/anmum/Margaret_angry.png, name angry
+    . image src assets/images/anmum/margaret_apathetic.png, name wapakels
+    . image src assets/images/anmum/Margaret_apoligetic.png, name apologetic
+    . image src assets/images/anmum/margaret_cruelty.png, name cruel
+    . image src assets/images/anmum/margaret_disappointed.png, name disappoint
+    . image src assets/images/anmum/margaret_doubtful.png, name doubt
+    . image src assets/images/anmum/Margaret_hurt.png, name hurt
+    . image src assets/images/anmum/margaret_pathetic.png, name pathetic
+    . image src assets/images/anmum/margaret_unhappy.png, name sad
+--
+
+. imagepack name kazuma, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/kazuma/kazuma-angry.png, name angry
+    . image src assets/images/kazuma/kazuma-closed eyes.png, name close
+    . image src assets/images/kazuma/kazuma-Happy.png, name happy
+    . image src assets/images/kazuma/kazuma-normal.png, name neutral
+    . image src assets/images/kazuma/kazuma-Sad.png, name sad
+    . image src assets/images/kazuma/kazuma-shocked.png, name shocked
+    . image src assets/images/kazuma/kazuma-Shy.png, name shy
+    . image src assets/images/kazuma/kazuma-smile.png, name smile
+    . image src assets/images/kazuma/kazuma-straight.png, name straight
+    . image src assets/images/kazuma/kazuma-Thinking.png, name think
+    . image src assets/images/kazuma/kazuma-worried.png, name worried
+--
+
+. imagepack name cecile, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/cecile/smile.png, name smile
+    . image src assets/images/cecile/amused-smiling.png, name amused
+    . image src assets/images/cecile/smile-blush.png, name blush
+    . image src assets/images/cecile/shy-or-surprise.png, name shy
+    . image src assets/images/cecile/shy-or-surprise-without-blush.png, name surprised
+    . image src assets/images/cecile/crying.png, name crying
+--
+
+. imagepack name jack, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/jack/grin.png, name grin
+    . image src assets/images/jack/neutral.png, name neutral
+    . image src assets/images/jack/scold.png, name scold
+    . image src assets/images/jack/smile.png, name smile
+--
+
+. imagepack name logo, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/logo.png, name logo
+--
+
+. curtain name bgcolor, color black, z 0
