@@ -1,0 +1,75 @@
+. scene #start :
+    
+    . trigger name next_on_right, action activate
+    . trigger name next_on_space, action activate
+    . trigger name game_menu_key_trigger, action activate
+    
+    . set @backgrounds, image muffin, :0
+    . set @cecile, image kek, :0
+    . set @logo, image logo, :0
+    
+    . move @cecile, x 50%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    . move @logo, x 50%, y 50%, xAnchor 50%, yAnchor 50%, :0
+    
+    . wait
+    
+    . show @bgcolor, :500
+    . show @logo, :1000
+    
+    . break
+    
+    . hide @logo, :500
+    . show @bgcolor, :1000
+    
+    . wait
+    
+    . show @tb_main, :500, effect slide, direction top
+    
+    (( n: How do you know that the life you're living is actually        <b>real</b>? ))
+
+    (( n: Is it better to live a fake life, where everything seems so surreal and exciting? Wild, with endless possibilities? ))
+
+    (( n: Or is it better to live a real life, where people are staggering to find out the reason for their existence? ))
+
+    . show @cecile, :500, effect slide, direction top
+    
+    . wait
+    
+    (( m: We first realized that we were characters in a game two weeks ago. ))
+
+    (( m: Me, Milo, a guy named Nido, and a girl named Energen. ))
+
+    (( m: Whoever thought up our names must be high. ))
+
+    (( m: They don't feel like our real names though, but we decided to go along with it. ))
+
+    (( m: At first, we noticed little things. Glitches. Things popping in and out of existence. ))
+
+    (( m: Then we tried to remember things like how we grew up in this family. Where we were born, anything at all. We couldn't remember. ))
+
+    (( m: We could only remember as far back as few weeks ago. ))
+
+    (( m: The worst part was when we tried to tell this all to our "mom"... it was like... ))
+
+    (( m: It was like she couldn't listen to us. Like she <i> couldn't </i> hear us.. ))
+
+    (( m: ... I guess the game's programming could only stretch so far. ))
+
+    (( m: Eventually, we just decided to just... let things happen and see how things would unfold... ))
+
+    (( m: Then we--                    well, our mom, decided to move out. ))
+
+    (( m: Fnding an affordable home to rent, we packed our things from our city apartment, and drove to the countryside. ))
+
+    (( a: We're here! ))
+    
+    . hide @tb_main
+    . clear @tb_main
+    
+    . goto scene game_start
+    
+--
+
+. scene #game_start :
+    . restart
+--
