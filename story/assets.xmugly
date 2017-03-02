@@ -9,9 +9,27 @@
     --
 --
 
-. character name n, textbox tb_main :
+. character name m, textbox tb_main :
+    . displayname :
+        Milo
+    --
+--
+
+. character name ni, textbox tb_main :
     . displayname :
         Nido
+    --
+--
+
+. character name s, textbox tb_main :
+    . displayname :
+        Shiba
+    --
+--
+
+. character name e, textbox tb_main :
+    . displayname :
+        Energen
     --
 --
 
@@ -19,6 +37,12 @@
     . displayname :
         Jack
     --
+--
+
+. imagepack name shiba, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/shiba/shiba.png, name shiba
+    . image src assets/images/shiba/shiba2.png, name help
+    . image src assets/images/shiba/shibangry.png, name angery
 --
 
 . imagepack name backgrounds, x 0, y 0, z 5, width 1366px :
@@ -36,14 +60,14 @@
     . image src assets/images/anmum/margaret_apathetic.png, name wapakels
     . image src assets/images/anmum/Margaret_apoligetic.png, name apologetic
     . image src assets/images/anmum/margaret_cruelty.png, name cruel
-    . image src assets/images/anmum/margaret_disappointed.png, name disappoint
+    . image src assets/images/anmum/margaret_disappointed.png, name sad
     . image src assets/images/anmum/margaret_doubtful.png, name doubt
     . image src assets/images/anmum/Margaret_hurt.png, name hurt
     . image src assets/images/anmum/margaret_pathetic.png, name pathetic
     . image src assets/images/anmum/margaret_unhappy.png, name sad
 --
 
-. imagepack name kazuma, x 50%, y 0, z 10, xAnchor 50% :
+. imagepack name nido, x 50%, y 0, z 10, xAnchor 50% :
     . image src assets/images/kazuma/kazuma-angry.png, name angry
     . image src assets/images/kazuma/kazuma-closed eyes.png, name close
     . image src assets/images/kazuma/kazuma-Happy.png, name happy
@@ -55,6 +79,32 @@
     . image src assets/images/kazuma/kazuma-straight.png, name straight
     . image src assets/images/kazuma/kazuma-Thinking.png, name think
     . image src assets/images/kazuma/kazuma-worried.png, name worried
+--
+
+. imagepack name milo, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/ryouma/angry.png, name angry
+    . image src assets/images/ryouma/anobayan.png, name anobayan
+    . image src assets/images/ryouma/blush.png, name blush
+    . image src assets/images/ryouma/neutral.png, name neutral
+    . image src assets/images/ryouma/playboy.png, name playboy
+    . image src assets/images/ryouma/shocked.png, name shocked
+    . image src assets/images/ryouma/smile.png, name smile
+    . image src assets/images/ryouma/thinking.png, name think
+--
+
+. imagepack name energen, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/rika/rika-angery.png, name angry
+    . image src assets/images/rika/rika-determined.png, name determined
+    . image src assets/images/rika/rika-frown.png, name frown
+    . image src assets/images/rika/rika-happy.png, name happy
+    . image src assets/images/rika/rika-idk.png, name idk
+    . image src assets/images/rika/rika-muchhappier.png, name joy
+    . image src assets/images/rika/rika-sad.png, name sad
+    . image src assets/images/rika/rika-shocked.png, name shocked
+    . image src assets/images/rika/rika-shy.png, name shy
+    . image src assets/images/rika/rika-thinking.png, name think
+    . image src assets/images/rika/rika-worried.png, name worried
+    . image src assets/images/rika/rika-worriedulit.png, name worried2
 --
 
 . imagepack name cecile, x 50%, y 0, z 10, xAnchor 50% :
