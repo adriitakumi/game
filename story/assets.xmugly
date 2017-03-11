@@ -5,37 +5,56 @@
 
 . character name a, textbox tb_main :
     . displayname :
-        Anmum
+        Anna
     --
 --
 
 . character name m, textbox tb_main :
     . displayname :
-        Milo
+        Matthew
     --
 --
 
-. character name ni, textbox tb_main :
+. character name man, textbox tb_main :
     . displayname :
-        Nido
+        Man
+    --
+--
+
+. character name t, textbox tb_main :
+    . displayname :
+        Tom
+    --
+--
+
+. character name g, textbox tb_main :
+    . displayname :
+        Ghost
+    --
+--
+
+. character name v, textbox tb_main :
+    . displayname :
+        Voice
+    --
+--
+
+. character name w, textbox tb_main :
+    . displayname :
+        Woman
+    --
+
+--
+
+. character name av, textbox tb_main :
+    . displayname :
+        Another Voice
     --
 --
 
 . character name s, textbox tb_main :
     . displayname :
         Shiba
-    --
---
-
-. character name e, textbox tb_main :
-    . displayname :
-        Energen
-    --
---
-
-. character name j, textbox tb_main :
-    . displayname :
-        Jack
     --
 --
 

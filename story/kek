@@ -1,0 +1,13 @@
+
+    . hide @anmum
+    . hide @energen
+    . hide @milo
+    . hide @nido
+    . hide @shiba
+    . hide @background
+    . hide @tb_main
+    . clear @tb_main
+    
+    . goto scene game_start
+    
+--
