@@ -11,3 +11,834 @@
     . goto scene game_start
     
 --
+
+
+
+
+
+
+
+
+
+(( n: We stepped out of the car. ))
+    
+    . show @anmum, :1000, effect slide, direction left
+    
+    . wait
+    
+    (( a: There it is guys! The house is over there, at the end of the road. ))
+
+    . move @energen, x 30%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    . move @shiba, x 97%, y 100%, xAnchor 90%, yAnchor 100%, :0
+    . move @nido, x 50%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    . move @milo, x 70%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    
+
+    . show @energen, :1500, effect slide, direction left
+    . show @nido, :1500, effect slide, direction left
+    . show @milo, :1500, effect slide, direction left
+
+    . break
+
+    (( n: We looked at the mansion in the distance. ))
+
+    (( e: It looks so creepy.. ))
+
+    (( m: Come on, Shiba! ))
+
+    (( n: I opened the backdoor of the car to let Shiba out. ))
+
+    . show @shiba, :1500, effect slide, direction left
+
+    . break
+
+    (( n: Shiba was our dog, by the way. ))
+
+    . set @shiba, image angery
+
+    (( n: However, as soon as she got out of the car, Shiba started growling. ))
+
+    . set @anmum, image sad
+    . set @nido, image shocked
+    . set @energen, image shocked
+    . set @milo, image shocked
+
+    (( n: Well. that's...                    a<i> bad sign</i>... ))
+
+    (( n: Mom turned to Shiba. ))
+
+    . move @energen, x 10%, y 100%, xAnchor 45%, yAnchor 100%
+    . move @anmum, x 70%, y 100%, xAnchor 38%, yAnchor 75%
+    . move @nido, x 30%, y 100%, xAnchor 45%, yAnchor 100%
+    . move @milo, x 50%, y 100%, xAnchor 45%, yAnchor 100%
+
+
+    (( a: Awwww, what's the matter Shiba? ))
+
+    . choice :
+        . option label "...", scene dotdot
+        . option label "He's scared of the house", scene scared
+    --
+
+--
+
+    . scene #dotdot :
+
+    . set @anmum, image sad
+
+    (( a: Maybe he's sick. ))
+
+    . set @nido, image think
+
+    (( ni: Hmm.. I don't think so.. He looks pretty angry? ))
+
+    . set @energen, image happy
+
+    (( e: Angry shiba is so cute! ))
+
+    . goto scene next
+
+--
+
+    . scene #scared :
+
+    (( m: I think he's scared of the house. ))
+
+    (( a: Why? ))
+
+    (( m: I dunno... ))
+
+    (( n: ... Because it looks like the mansion's architect was a fan of Edward Gorey? ))
+
+    (( ni: I guess something upset her. Animals can sense things, y'know? ))
+
+    (( e: Maybe it was a squirrel or something. ))
+
+    . goto scene next
+
+--
+
+    . scene #next :
+
+    . set @anmum, image smile
+
+    (( a: Nevermind. Let's go inside. ))
+
+    (( n: We looked around.  ))
+    
+    (( n: I could see from here that there was a study room that led to a massive grand ballroom. It was the kind of grand ballroom that I could also imagine doubling as a a Final Boss arena. ))
+    
+    (( m: Oh wow its actually really nice! ))
+    
+    (( n: I stared at the piano that was giving off a creepy vibe. It was the only thing in the living room that didn't sit right with me. ))
+    
+    (( ni: That piano is giving me the chills. ))
+    
+    (( a: I prefer to call it rustic charm! I love how old-timey this place looks. ))
+    
+    (( m: ... ))
+    
+    (( a: What? Scared? ))
+    
+    (( m: No! ))
+    
+    (( m: Well... I don't think someone's gonna jump out and shout, "A boogie woogie boo," but I still feel... a huge amount of unease... ))
+    
+    (( a: Don't worry! I'll protect you from anything in this household. ))
+    
+    (( m: ... ))
+    
+    (( n: Mom started glitching out again. It happened from time to time. ))
+    
+    (( n: It was the first thing that made me realize that I was in a game... ))
+    
+    (( n: It used to freak me out... but now... the "novelty's" worn off. Or the shock's worn off, whatever you want to call it. ))
+    
+    (( m: ... ))
+    
+    (( a: ...Milo? Earth to Milo? ))
+    
+    (( n: I snapped out of it. ))
+    
+    (( m: Uh! Yeah?! Mom? ))
+    
+    (( a: I said, "I'll protect you!" ))
+    
+    (( m: Sure, sure... ))
+    
+    (( n: Now I know what you might be thinking. ))
+    
+    (( n: If we were moving into this house, why were we acting like we've never set foot in this house before? ))
+    
+    (( n: Apparently, this is a world where you pay an estate agent a lot of money and just hope for the best. ))
+    
+    (( n: You just cross your fingers and wish really hard... ))
+    
+    (( n: ... And they magically find a beautiful house you can afford to lodge in. ))
+    
+    (( w: We're leaving this crazy house! ))
+    
+    (( n: A young couple came lumbering down the stairs. They were each carrying a suitcase. ))
+    
+    (( man: I've had it! I can stand for a lot of things, but not this! ))
+    
+    (( n: And with that, the couple left. ))
+    
+    (( av: My, my... ))
+
+    (( n: A person--who's gender was unclear to me--aproached us. I think he's a guy? He was wrapped in several layers of winter clothing. ))
+    
+    (( n: Despite the fact that it wasn't winter... ))
+    
+    (( t: It seems another family has left us. With another to replace them. It's like a revolving door around here. ))
+    
+    (( e: Umm... Who are you? ))
+    
+    (( t: Me? Well... I'm the old man but you can call me Tom. ))
+    
+    (( ni: Uhh... Why Tom? ))
+    
+    (( t: Well, that's my name: The Old Man!))
+    
+    (( ni: Ohhhh... T-O-M... The Old Man! That's pretty funny. ))
+    
+    (( n: His voice was also ambiguous. And not just in terms of gender. The voice sounded ancient, childish yet wise, all at the same time. ))
+    
+    (( a: I'm Anmum, this is my daughter Energen... ))
+    
+    (( e: Hello! ))
+    
+    (( a: Nido... ))
+    
+    (( ni: Nice to meet you sir. ))
+    
+    (( a: Milo, and Shiba! ))
+    
+    (( m: Good day sir. Why were those people leaving? ))
+    
+    (( t: They're scared of the spirit who dwells in this households. It's a terrible story. One fraught with tragedy... ))
+    
+    (( t: ... Would you like to hear the story? ))
+    
+    (( n: I told him that, no, we wouldn't, and Tom began... ))
+
+    (( n: The sweater layered character told Rebecca and I a pretty full and complete information about the mansion. ))
+    
+    (( n: He told us about how the structure was originally commissioned in the eighteen-hundreds. ))
+    
+    (( n: And about the original owners of the mansion. ))
+    
+    (( n: Miro and Clara were a couple who'd recently married before moving into their new home. Miro first met Clara when she became his assistant for his magic act. This eventually led to them falling in love with each other. ))
+    
+    (( n: "Miro the Magician", as he was called, was an illusionist. ))
+    
+    (( n: He was also rumored to have dabbled in two dubious things: Adultery and the Dark Arts. ))
+    
+    (( n: Though neither was ever proven publicly... ))
+    
+    (( n: He was apparently successful enough as a magician to afford the mansion, and continued performing with Clara for many years, until... ))
+    
+    (( n: Because there's always an "Until..." with these stories... ))
+    
+    (( n: Until... ))
+    
+    (( n: For some reason, my mind kept wandering... But I did my best to focus on Tom's clichéd story... ))
+    
+    (( n: ... ))
+    
+    (( n: This place really gives off a creepy vibe... ))
+    
+    (( a: So what happened to the magician and his wife? ))
+    
+    (( t: They disappeared! ))
+    
+    (( n: I sighed. No one seemed to notice. ))
+    
+    (( n: Really? "The magician disappeared?" How ironic. Very cute. ))
+    
+    (( t: They completely vanished! ))
+    
+    . choice :
+        . option label "Were they ever found?", scene found
+        . option label "(snark)Vanished? That sounds like a great magic act!", scene snark
+    --
+--
+
+. scene #found :
+    (( m: Were they ever found? ))
+    
+    (( t: Eventually Miro was found dead in the basement. Of this very mansion. ))
+    
+    . goto scene scene_two   
+--
+
+. scene #snark :
+    (( m: That must have gone well with the audience. ))
+
+    (( t: It wasn't a magic trick! They had vanished from their household without taking anything with them... ))
+
+    (( n: He took me seriously... I could see that my sarcasm was once again wasted in this world. ))
+
+    (( t: No, no, they became missing for several days. Eventually, Miro was found dead in the basement. Of this very mansion. ))
+
+    . goto scene scene_two
+
+--
+    
+. scene #scene_two :
+    (( t: His body was covered with long, deep slash marks, like he'd been scratched to pieces by some sort of long-fingered animal... ))
+    
+    (( t: But his wife was never found... ))
+    
+    (( t: I think Clara knew that her husband had been cheating on her. Maybe when she found out, she confronterd him with it. ))
+    
+    (( t: Maybe Miro kept a book filled with black magic and that had something to do with it... ))
+    
+    (( t: But I think something very dark happened on the night that they disappeared... ))
+    
+    (( t: And I believe that Clara's ghost still haunts this place to this day. ))
+    
+    (( t: It would explain all the strange things in this place. Eerie noises. Furniture rearranging itself after you leave the room... ))
+    
+    (( n: Then Tom suddenly stopped his history lecture. ))
+    
+    (( t: Do you believe in ghosts? ))
+    
+    (( a: I've never really thought of it seriously before, but... no. I don't believe in ghosts. Sorry. ))
+    
+    (( t: It's fine! No need to apologise to me. ))
+    
+    (( t: And what about your children? What do they think? ))
+    
+    (( e: I don't know... ))
+    
+    (( ni: I'm not sure either... ))
+    
+    . choice :
+        . option label "Why are you telling us this?", scene why
+        . option label "How do you know all this?", scene how
+    --  
+--
+
+. scene #why :
+    (( ni: Why are you telling us this? Won't that make us more likely be the next family to move out? ))
+
+    (( n : Was this person trying to convince us to leave? ))
+
+    (( t: I just thought it was interesting and important for you to know this household's backstory. ))    
+    
+    (( t: It fascinates me. Its actually the reason why I moved here in the first place. ))
+
+    (( e: But why are you staying here if you believe that there is a ghost? ))
+
+    (( t: I've... made this an occupation of mine. ))
+
+    (( t: In the past, I've been proven to... have a knack for solving ghost's problems and helping them find peace. ))
+    
+    (( a: Your'e a ghost hunter? ))
+
+    (( t: Not a hunter, my dear. I'd prefer to think myself as a ghost ~whisperer~ ))
+
+    (( m: ... ))
+
+     . goto scene sum
+--  
+
+. scene #how :
+   	(( m: How do you know all this? ))
+
+   	(( t: I researched this mansion's history laboriously. ))
+
+   	(( t: I think it's important to know the history of a home that's managed to stick around for over a hundred years... ))
+
+  	 . goto scene sum
+--
+
+. scene #sum :
+
+    (( t: So, to sum it all up... ))
+
+    (( t: I believe that there's going to be strange changes coming soon in your life. Something to do with this mansion's dark past. You'd best be careful. ))
+
+    (( t: I mean, I know you've said that you don't believe in ghosts. You may think that this is just a huge joke... ))
+
+    (( a: No, no. This was really interesting! Thank you. ))
+
+    (( t: You're welcome... ))
+
+    (( n: Interesting?! ))
+
+    (( t: Well, I'd better get going. That's all I have left to say. ))
+
+    (( t: I'll see you later. ))
+
+    (( n: With that, Tom left. ))
+
+    (( n: Mom turned to us. ))
+
+    (( e: So... what now? ))
+
+    (( a: Well, we still have a lot of unpacking to do... But I kinda want to do a bit of exploring first. ))
+
+    (( a: Why don't we leave the rest of the luggage till after later? ))
+
+    (( m: It's only two suitcases. ))
+
+    (( m: Look, I can do it myself. You guys can explore the house and I'll catch up with you later. ))
+
+    (( a: Okay! Let's go guys! ))
+
+    (( n: Welp. Its official. We're trapped in a horror game. ))
+
+    (( n: A badly-written horror game.))
+
+    (( n: Nevermind. I'll just "go and get the luggage", shall I? ))
+
+    (( n: Is this an adventure game? Because that sounded like a lousy first quest. ))
+
+    (( n: I pulled out the two, improbably-sized suitcases. ))
+
+    (( n: I call them that because that's all we packed. There was no moving van. ))
+
+    (( n: There's travelling light, and then there's this... ))
+
+    (( n: Our whole previous life was the contents of these two suitcases... ))
+
+    (( m: ... ))
+
+    (( n: With a heave, I lifted them up to carry them back to the mansion. ))
+
+    (( n: After about five years or so, I eventually finished my trek up the front path, and made it back to the house.))
+
+    (( n: I'll go put the luggage upstairs. ))
+
+    (( n: No way... ))
+
+    (( n: Right in front of me was... a ghost that looked like the woman from Miro's magic act poster. Clara. ))
+
+    . choice :
+        . option label "What do you want?!", scene what
+        . option label "Anna!", scene anna
+    --
+--
+
+. scene #what :
+  	(( m: What do you want?! ))
+
+  	(( g: ... ))
+
+  	(( n: It wouldn't answer... ))
+
+ 	(( m: Ahh! ))
+
+ 	. goto scene milo
+--
+
+. scene #anna :
+   	(( m: ANNA! ))
+
+   	(( n: That came out louder than expected. ))
+
+  	(( m: Help! ))
+
+    . goto scene milo
+--
+
+. scene #milo :
+  	(( a: MILO?! ))
+
+   	(( m: Ah! ))
+
+   	(( a: What's wrong, Milo?! ))
+
+   	(( n: After I finished restarting my heart, I answered her. ))
+
+    (( m: I-I saw a ghost!  It was the ghost of a woman. I think she was the magician's wife. ))
+
+    (( a: She relaxed and gave me a pitying look. ))
+
+    (( m: Didn't you see it?! ))
+
+    (( a: Oh, Milo. You probably just thought you saw something. I mean, this drafty house... ))
+
+    (( n: Yeah, "drafty". Sure... ))
+ 
+    (( n: "Oh, you're right, Mom. Drafts do get my imagination aflutter!" ))
+
+    (( a: Now, if that's everything, I'm gonna go back to exploring the ground floor. Okay? ))
+
+    (( m: Yeah, just... be careful, alright? ))
+
+    (( a: I will! ))
+
+    (( n: Just my luck. Just as Mom comes, the ghost vanishes. ))
+
+    (( n: Before I had wondered if the ghost was going to be real, or someone in a mask. Either way, it would've been dangerous, but after that adventure, I knew that the ghost was real. ))
+
+    (( n: I had a feeling that Mom is "safe". Well, as safe as she could be...  ))
+
+    (( m: ... ))
+
+    (( n: ...I continued upstairs... ))
+
+    (( n: ... ))
+ 
+    (( n: Well, this wasn't our bedroom... ))
+
+    (( n: I had accidentally stepped into the attic. Dust-covered toys filled the room. ))
+
+    (( n: Toys? Did Clara and Miro have children? Tom didn't mention that. ))
+
+    (( n: Were they planning on having children, perhaps? Did something happen? ))
+
+    (( n: ... ))
+
+    (( a: AAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHH!!!!!!!! ))
+
+    (( m: Mom! ))
+
+    (( n: I found mom on the ground. Nido and Energen were trying to help her up. ))
+
+    (( m: What happened?! ))
+
+    (( a: Th-There! ))
+
+    (( n: She pointed to the wall... ))
+
+    (( n: The letters were all in caps, and it appeared that the author tried her best to try and transcribe their own screaming. ))
+ 
+    (( n: It was written in blood and looked like it was going to be hell to scrub out. ))
+
+    (( n: It said, "GET OUT"... ))
+
+    (( n: But by now, it really should have said, "GET OUT, you idiot." ))
+
+    (( a: Did you see it run past you? Did you see what happened?! ))
+
+    (( m: I heard you scream and I rushed over. No one passed me. ))
+
+    (( e: How could you miss it?! I saw it! I saw the ghost! ))
+
+    . choice :
+      	. option label "Maybe it was a "draft"...", scene draft
+      	. option label "...", scene kek
+    --
+--
+
+. scene #draft :
+   (( m: Maybe it was a draft... ))
+
+   (( a: This is no time for jokes! ))
+
+   (( a: Alright! I admit it! I was wrong! There was a ghost, like you said... ))
+
+   (( a: You don't have to be a jerk about it... ))
+
+   (( m: Sorry... ))
+
+   . goto scene right
+--
+
+. scene #kek :
+   (( m: ... ))
+
+   (( n: Sometimes it's best to say nothing at all... ))
+
+   . goto scene right
+--
+
+. scene #right :
+    (( a: ... ))
+
+    (( a: You were right Milo...))
+
+    (( m: I'd prefer if I wasn't... ))
+
+    (( a: ... ))
+
+    (( a: Tom said that the plan on doing a séance... ))
+
+    (( m: Séance? ))
+
+    (( a: You know? That thing in the movies where a group of people gather around to try and contact ghosts. ))
+
+    (( m: I know what a séance is... ))
+
+    (( n: What? We're just going to forget about the malevolent ghost in this mansion?! ))
+
+    (( a: Tom says it'll be fun! ))
+ 
+    (( n: Yep, I guess we were... ))
+
+    (( m: Mom, don't you think we should leave? It's not safe here! ))
+
+    (( a: What? But... ))
+
+    (( a: But this is our home now. ))
+
+    (( m: ... ))
+
+    (( m: Fine... I'll see you later. ))
+
+    (( n: Trying to convince her to go wasn't going to work. I realized that. ))
+
+    (( n: This was all just a game, after all. And not even one of the good ones. ))
+
+    (( m: ... ))
+
+    (( n: Wait, what's this? ))
+
+    (( n: Behind a section of ripped wallpaper and worn wooden paneling, there was a marble tile. And it clearly didn't belong there. ))
+
+    (( n: I pressed down on the tile and a nearby wall opened up, revealing a pitch-black corridor. ))
+
+    (( t: My goodness! You found a secret passage way?! ))
+
+    (( m: Really? You're surprised? In this house?! ))
+
+    (( t: Rebecca and I are going to perform a séance in the vestibule. Would you care to join us? ))
+
+    (( m: Yeah, Rebecca told me already. And I'll pass. ))
+
+    (( m: Also, are you sure its wise to do a séance when there's a ghost that wants everyone to leave? ))
+
+    (( t: There won't be any way to give the ghost true peace unless we can find a way of communicating with her. ))
+
+    (( t: I hope you change your mind though. The more people, the more power. ))
+
+    (( t: I'll be in the vestibule if you want to join in. ))
+
+    (( m: ... ))
+
+    . goto scene tb
+--
+
+. scene #tb :
+
+   (( n: Enough was enough. No more "letting things unfold". If I was in a horror game, at least I could choose how the story ends. ))
+
+   (( n: I had two choices: Win the game, or find a way out of the game... ))
+
+   (( n: The problem was, I had no idea how to go about doing either... ))
+
+   (( n: Where should I start? ))
+
+    . choice :
+        . option label "Follow Rebecca and Tom back to the vestibule.", scene seance
+        . option label "Back to the attic.", scene attic
+        . option label "Explore the secret passage way.", scene passageway
+    --
+--
+
+. scene #seance :
+   (( n: Oh what the hell, I'll join them. ))
+
+   (( n: I decided to meet up with Rebecca and Tom for the séance))
+
+   (( n: Rebecca was trying to shoo Shiba out of the room. ))
+
+   (( a: Sorry Shiba! You wait over in the sitting room. ))
+
+   (( t: We can do it here. I've set up everything we need in the table. ))
+
+   (( n: I looked... ))
+
+   (( n: There was an old-looking dagger with a black handle. ))
+
+   (( m: What's that? ))
+
+   (( t: It's called an Athame. It's a ceremonial blade used for rituals . It's a tool of medieval origin, I've been told. ))
+
+   (( t: It's also said to have supernatural and magical properties. ))
+
+   (( t: Basically, it's a knife that also doubles as a wand! ))
+
+   (( m: Uhh... cool... ))
+
+   (( t: I'll start the séance now... ))
+
+   (( t: Everyone, hold hands.))
+
+   (( n: We held hands. ))
+
+   (( t: Now I'm going to sing a chant... ))
+
+   (( t: They say that those from beyond respond to the vibrations of music. ))
+
+   (( m: Who's "they?" ))
+
+   (( t: Well, er, I do. Mostly. ))
+
+   (( n: Great... ))
+
+   (( a: Hey, Tom?! I have a weird feeling... ))
+
+   (( a: Like a... spooky feeling? ))
+
+   (( n: Oh boy... ))
+
+   (( t: That's good. Perhaps you're picking up something using a second sight. ))
+
+   (( t: Ahem, I'll do the chant now... ))
+
+   (( n: Tom coughed to clear his throat. ))
+
+   (( t: UuuuuuuuuuuUUUUUUUUUUUUUUUUUUUUUUUUuuuuuuuuuuuu              UUUUU                   uuuuuuuuuuuuuuuu...  ))
+
+   (( t: UUUUUUUUuuuuuuuuuuuuuuuUUUUUUUUUUUUUuuu                 UUUUUUuuuuuuu... ))
+
+   (( t: UUUUUUUUUUUUUUUUUuuuuu           uuuuuuuuuuu             UUUuUUUUuU       UuUUUUuuuuuuu            uuuUUUUUUuuu... ))
+
+   (( n: Really? That was the chant? ))
+
+   (( t: ... ))
+
+   (( a: ... ))
+
+   (( m: ... ))
+
+   (( t: ... ))
+
+   (( n: Thankfully, nothing happened. ))
+
+   (( n: Then Rebecca leaned towards me and whispered in my ear. ))
+
+   (( a: Hey, Milo? Guess what? I don't have that weird feeling anymore. ))
+
+   (( n: I was just about to tell Rebecca the horrible implications for saying something like that, when the Universe did it for me.. ))
+
+   (( n: As if on cue, the lights went out. ))
+
+   (( n: "Yep. Something is definitely gonna happen.", I thought to myself. ))
+
+   (( a: Ahh!! ))
+
+   (( n: We turned to see the ghost right in front of us! ))
+
+   (( t: Th-This wasn't meant to happen! ))
+
+   (( m: What do we do?! ))
+
+   (( t: Well... ))
+
+   (( n: Tom tried to reason with the spirit. ))
+
+   (( t: Clara, please. What are you doing? This wasn't-- This isn't how it goes. ))
+
+   (( n: It wasn't working. Of course it wasn't working. ))
+
+   (( g: ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞   M̩̖̳͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞   i̜̠̗̬̼͉  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  r̦̭̩͉̳͙  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  o̹̫͍̳̟̺͚͡   ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞ ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞ ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞ ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞A̖̳͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  d̠̗̬̼͉  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  r̦̭̩͉̳͙  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  i̫  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  a̖̳͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  n̠̗̬̼͉̭̩͉̳͙̫͍̳̟̺͚͍̳̟̺͚͡ ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͡͞͞))
+
+   (( n: I glanced around for a makeshift weapon... ))
+
+   (( n: How do you kill a ghost? ))
+
+   (( n: I took Tom's Athame dagger from the table. ))
+
+   (( n: I held it threateningly towards the ghost. ))
+
+   (( m: Leave us alone! ))
+
+   (( n: The ghost kept approaching us... Her floating "stride" didn't even break... ))
+
+   (( m: STOP IT! ))
+
+   (( n: I swung the Athame and cut the ghost straight throught the middle. ))
+
+   (( n: The ghost of Clara torn in half like a cloud of smoke. ))
+
+   (( n: She no longer appeared solid, like a person... ))
+
+   (( n: Clara slowly faded into the mist... ))
+
+   (( n: And just like that... She was gone for good. ))
+
+   (( t: Adrian... ))
+
+   (( a: Adrian, you did it! ))
+
+   (( m: I... ))
+
+   (( n: ... I did it... ))
+
+   (( n: I was able to save everyone. ))
+
+   (( n: I'd "won" the game... ))
+
+   (( n: Now, hopefully, my life would be better, right? ))
+
+   (( n: I mean, what happens after a video game ending? ))
+
+   (( n: Error: tech_lotus corrpted... redacted_Life has encoutered an error and needs to shut down. ))
+
+   (( n: Host is unresponsive. Attempting to reconnect to host. Please wait... ))
+
+   (( n: Unable to reconnect to host... HOST_MILO HAS BEEN TERMINATED . ))
+
+   . goto scene bad_end
+--
+
+. scene #passageway :
+   (( n: I was feeling in a cautious mood, so I of course decided to explore the damp, dingy tunnel. ))
+
+   (( n: I walked down the dark, creepy stairs. ))
+
+   (( n: I reached the basement, which turned out to be a cellar. ))
+
+   (( n: Barrels filled with wine lined all over the room. ))
+
+   (( n: At least, I think it was wine. But with how the rest of this mansion was designed, there were probably seven or eight barrels that probably opened up to a secret passage... ))
+
+   (( n: I took another look around and noticed... something else. ))
+
+   (( n: There was an old suit of armor on a wooden stand. ))
+
+   (( n: How did I miss it? Was it there before? ))
+
+   (( m: ... ))
+
+   (( m: Ahh... A-Anyone in there? ))
+
+   (( n: Thank God... ))
+
+   (( p: ... ))
+
+   (( n: It started to glitch. ))
+
+   (( n: I was strangely... drawn to it. Like a moth to a flame. ))
+
+   (( n: I mean, it wasn't just an attraction to it--I mean, I love medieval things. But this feeling was more like... ))
+
+   (( n: ... Like this suit of armor was different from everything else in this world. ))
+
+   (( n: Like it didn't belong here... ))
+
+   (( n: Like me. ))
+
+   (( n: I touched it, and... ))
+
+   (( n: Error: Lost connection to HOST_MILO. ))
+
+   (( n: Searching for new host... HOST_HANA found. Reconnecting to new host... Please wait... ))
+
+--
+
+. scene #bad_end :
+   (( v: Tell me... Are you happy with this fate? ))
+
+   . choice :
+     . option label "Yes.", scene yes
+     . option label "No.", scene no
+   --
+--
+
+. scene #no :
+   (( v: Then I'll turn back time... ))
+
+   . goto scene tb
+
+--
+
+
+
+

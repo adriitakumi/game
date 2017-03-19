@@ -5,18 +5,23 @@
     . trigger name next_on_space, action activate
     . trigger name game_menu_key_trigger, action activate
     
-    . set @backgrounds, image house, :0
-    . set @anmum, image smile, :0
-    . set @milo, image neutral, :0
-    . set @nido, image neutral, :0
-    . set @energen, image worried, :0
+    . set @backgrounds, image hallway, :0
+    . set @hana, image neutral, :0
+    . set @kaemon, image neutral, :0
+    . set @sen, image sad, :0
     . set @shiba, image shiba, :0
     . set @logo, image logo, :0
+    . set @ghost, image smile, :0
+    . set @milo, image shocked, :0
     . set @music, track legend
     
-    . move @anmum, x 10%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    . move @hana, x 83%, y 100%, xAnchor 45%, yAnchor 100%, :0
     . move @logo, x 50%, y 50%, xAnchor 50%, yAnchor 50%, :0
-    
+    . move @kaemon, x 20%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    . move @sen, x 20%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    . move @milo, x 20%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    . move @ghost, x 40%, y 100%, xAnchor 45%, yAnchor 100%, :0
+
     . wait
     
     . show @bgcolor, :500
@@ -30,920 +35,983 @@
     . wait
 
     . show @tb_main, :500, effect slide, direction top
-    
-    (( n: How do you know that the life you're living is actually        <b>real</b>? ))
 
-    (( n: Is it better to live a fake life, where everything seems so surreal and exciting? Wild, with endless possibilities? ))
+    (( n: I guess you want me to say something inspirational about the cherry blossoms and how they're a metaphor for my life turning around and all that other high school romance stuff, but that's not me. ))
 
-    (( n: Or is it better to live a real life, where people are staggering to find out the reason for their existence? ))
+    (( n: Instead, I'll take a moment to set things straight, before someone goes and starts accusing me of things... ))
 
-    . show @cecile, :500, effect slide, direction top
-    
-    . wait
-    
-    (( m: I first realized that I was a character in a game two weeks ago. ))
+    (( n: Firstly, no, I didn't run to school late with a piece of toast in my mouth. I got up on time. I ate. I got to school early. How do you think I got time to do this narration in my head? ))
 
-    (( m: At first, I noticed little things. Glitches. Things popping in and out of existence. ))
+    (( n: And no, I didn't crash into a "cute" boy on my way here. I'm not a total klutz. ))
 
-    (( m: Then I tried to remember things like how I met my girlfriend, Anna. Where I was born, or either of my parent's names.                        I couldn't remember. ))
+    (( n I don;t even get why I constantly do this. Monologuing to myself. Dad's told me to stop with this narrating stuff. ))
 
-    (( m: I could only remember as far back as few weeks ago. ))
+    (( n: Who would I even be talking to? Someone telepathic? ))
 
-    (( m: It was a hard two weeks... ))
+    (( n: Ah, well. It's fun. I can't help it. And I'm pretty sure other people have done it too. ))
 
-    (( m: The worst part was when we tried to tell this all to our Anna... it was like... ))
+    (( n: That's what I tell myself, anyway... ))
 
-    (( m: It was like she couldn't listen to me. Like she <i> couldn't </i> hear me.. ))
-
-    (( m: ... I guess the game's programming could only stretch so far. ))
-
-    (( m: Eventually, we just decided to just... let things happen and see how things would unfold... ))
-
-    (( m: Then we--                    well, Anna, decided to move out. ))
-
-    (( m: Fnding an affordable home to rent, we packed our things from our city apartment, and drove to the countryside. ))
-
-    (( a: We're here! ))
+    (( n: But I'm getting ahead of myself. You're probably asking for footnotes by now, aren't you? ))
 
     . wait
 
-    (( n: We stepped out of the car. ))
-    
-    . show @anmum, :1000, effect slide, direction left
-    
+    . show @hana, :500, effect slide, direction left
+
+    (( n: I'm Hana. ))
+
+    (( n: And the biggest problem I have... Is that I was born with purple hair. ))
+
+    (( n: Well, sort of. Let me explain. ))
+
+    (( n: Purple hair isn't exactly normal here, no matter what anime tells you. ))
+
+    (( n: When I was born, my parents saw my hair and simultaneously had the same thought... ))
+
+    (( n: "Oh, no. Our daughter is an anime protagonist." ))
+
+    (( n: And from that moment on, weird and unexplainable things tried to creep into my life. ))
+
+    (( n: My parents did their best to try and protect me from it all. ))
+
+    (( n: When I was two years old, an imp, or demon of some sort, was found creeping by my crib. ))
+
+    (( n: My mom hit it with a roling pin and called animal control. ))
+
+    (( n: When I was six, a man in a dark cloak knocked on our front door, trying to tell my Mum and Dad that I was the "Chosen One" from a prophecy written long ago on an old , stone somethings... ))
+
+    (( n: Dad closed the door on him. ))
+
+    (( n: It all ended up being too much for my Mum, she ended up packing a suitcase and left me and Dad when I was eight. ))
+
+    (( n: She didn't realize that this only created a tragic backstory for me... ))
+
+    (( n: ...I can make jokes like that because I don't remember her too well, to be honest. ))
+
+    (( n: And now, it seems like Fate is trying to rope me into a romanc-- ))
+
+    (( k: Hey. ))
+
+    . show @kaemon, :500, effect slide, direction right
+
     . wait
+
+    (( n: This was Kaemon. If you're as bad with names as I am, just think of this: "Kaemon" sounds like "demon". Which is ironic, seeing as Kaemon had the same temperament as one. ))
+
+    (( n: Kaemon's hair was bleached and dyed, which was against school rules. If it wasn't, I would've dyed my hair something normal. ))
+
+    (( k: Hey. Aren't you gonna... ask me? ))
+
+    (( n: He did that thing where he leaned against a row of lockers trying to look cool and casual, but was leaning at an akward angle, so it ended up not looking cool or casual. ))
+
+    (( h: Ask you about what? ))
+
+    (( n: He sighed. ))
+
+    (( k: Ugh... It figures that you wouldn't know what was happening tonight. Despite all the posters around the school. Idiot. ))
+
+    (( n: I then realized what he was referring too, but I decided to play dumb. Because I didn't want to "ask him", as he put it. ))
+
+    . set @kaemon, image blush
+
+    . wait
+
+    (( k: Look, if you must really know, I suppose that I'll tell you. Just... consider yourself lucky that I just happen to have a flyer handy, o-okay! ))
+
+    (( n: He blushed as he handed me a poster with the edges of it--where it had been stapled somewhere--had been torn off. ))
+
+    . set @kaemon, image neutral
+
+    . wait
+
+    (( n: Do I even need to say he's had a crush on me since the beginning of the school year? No? We're good? Everybody on the same page now? ))
+
+    (( k: You idiot. ))
+
+    (( n: He seemed to think that calling the "object of his afections" an "idiot" would be seen as "endearing" or "quirky" or "an attempt to hide his true feelings". ))
+
+    (( n: And not, as it was in reality, that it was a really off-putting and annoying thing that was really getting me cheesed off. ))
+
+    (( n: Kaemon is what you'd call a "bad boy"... If said bad boy didn't really commit to the whole thing. ))
+
+    (( n: What I mean is... Oh, hell, it doesn't need an explanation, you can just see it for yourself. ))
+
+    (( n: I looked at the flyer. It was for the upcoming school festival. ))
+
+    (( k: There's a festival happening tonight. So, assumedly, I guessed that you'd want to ask me to come with you there. Once you found out about it... ))
+
+    . set @kaemon, image blush
+
+    . wait
+
+    (( k: Not that I want to go with you badly or anything. But I probably won't say "no" to you if you asked... ))
+
+    (( k: ... ))
+
+    (( h: ... ))
+
+    . set @kaemon, image stahp
+
+    . wait
+
+    (( k: S-Stop looking at me like that! ))
+
+    (( h: I'm not looking at you like anything! ))
+
+    (( h: And, no. Sorry, but I'll probably be staying at home tonight. I'm really busy with schoolwork. ))
+
+    (( k: Wha- ))
+
+    . set @kaemon, image neutral
+
+    . wait
+
+    (( k: Well then, fine! It's not like I care. ))
+
+    (( k: I've gotta be somewhere. ))
+
+    . move @kaemon, x -20%, y 100%, xAnchor 45%, yAnchor 100%, :500
+    . hide @kaemon
+
+    (( n: With that, he walked off. ))
+
+    (( h: ... ))
+
+    (( s: H-Hana! ))
+
+    . show @sen, :500, effect slide, direction right
+
+    . wait
+
+    (( n: Oh, no... ))
+
+    (( s: H-Hi, Hana! C-Can  talk t-to you f-for a second? ))
+
+    (( n: That's Sen. To remember his name, just think of "zen". You know, because he's so calm. His machine-gun stuttering and constant twitchiness is the absolute picture of zen, right? ))
+
+    (( n: His name also starts with the same letter as "shy", so he's also got that going for him. ))
+
+    (( h: Go ahead, I won't stop you. ))
+
+    (( s: I s-see you have... uh... ))
+
+    (( n: Sen and I knew each other since childhood. I first met him at a party just before we started going to school. I've never left a party quicker. ))
+
+    (( n: He didn't stutter in the same way a stutterer stuttered, if that makes any sense. ))
+
+    (( n: He stuttered almost every word. Not just words beginning with b, or words at the eginning of a sentence. ))
+
+    (( n: And it entirely stemmed from his shyness. Or maybe it didn't? I guess Sen was sorrta an anomally... ))
+
+    (( s: I-I see you have one of t-the flyers for the f-festival t-tonight. ))
+
+    (( s: I-I wanted to ask you if you wanted to go with me... ))
+
+    (( h: I'm sorry, but I actually plan on staying home tonight. ))
+
+    (( n: O-Oh... ))
+
+    (( k: Hey! ))
+
+    . show @kaemon, :500
+    . move @kaemon, x 50%, y 100%, xAnchor 45%, yAnchor 100%, :500
+
+    . wait
+
+    (( s: Ahh! ))
+
+    (( k: Is this guy bothering you? ))
+
+    . choice :
+        . option label "Yes.", scene yeh
+        . option label "Yes.", scene yeh
+        . option label "Yes.", scene yeh
+        . option label "Yes.", scene yeh
+    --
+--
+
+. scene #yeh :
+    (( h: No! ))
+
+    (( h: Kaemon! This is Sen! We were kids together! ))
+
+    (( k: Yeah. Well. That may be. But he just seemed to be... ))
+
+    (( k: Trying to go above his league... ))
+
+    . set @sen, image huh
+
+    . wait
+
+    (( s: U-Uh?! ))
+
+    (( n: Oh, brother... ))
+
+    (( h: No, he's not. Calm down. ))
+
+    (( h: Also, didn't you just say that you had to be somewhere? ))
+
+    (( k: Fine. Whatever. )) 
+
+    . move @kaemon, x 120%, y 100%, xAnchor 45%, yAnchor 100%, :500
+    . hide @kaemon
+
+    (( n: He stalked off. ))
+
+    . set @sen, image sad
+
+    (( s: T-Thanks, Hana. ))
+
+    (( h: ... Don't mention it... ))
+
+    . move @sen, x -20%, y 100%, xAnchor 45%, yAnchor 100%, :500
+
+    . wait
+
+    (( n: Whew... ))
     
-    (( a: There it is Matthew! The house is over there, at the end of the road. ))
+    . show @milo, effect slide, direction right, :500
 
-    . move @energen, x 30%, y 100%, xAnchor 45%, yAnchor 100%, :0
-    . move @shiba, x 97%, y 100%, xAnchor 90%, yAnchor 100%, :0
-    . move @nido, x 50%, y 100%, xAnchor 45%, yAnchor 100%, :0
-    . move @milo, x 70%, y 100%, xAnchor 45%, yAnchor 100%, :0
-    
+    . wait
 
-    . show @energen, :1500, effect slide, direction left
-    . show @nido, :1500, effect slide, direction left
-    . show @milo, :1500, effect slide, direction left
+    (( n: Huh? A new guy? ))
 
-    . break
+    (( m: Excuse me, but... Where am I? ))
 
-    (( n: I looked at the mansion in the distance. ))
+    (( n: It was an odd question, but I indulged him. ))
 
-    (( m: Come on, Shiba! ))
+    (( h: You're on the third floor of the South Wing. ))
 
-    (( n: I opened the backdoor of the car to let Shiba out. ))
+    (( n: He gave me a look like he wanted more info than that...  ))
 
-    . show @shiba, :1500, effect slide, direction left
+    (( h: You're in Mikusuka High School. ))
 
-    . break
+    (( n: He looked at me as if he didn't believe me. ))
 
-    (( n: Shiba was our dog, by the way. ))
+    (( m: ... ))
 
-    . set @shiba, image angery
+    (( n: I've never seen this guy before. ))
 
-    (( n: However, as soon as she got out of the car, Shiba started growling. ))
+    (( n: So, first the bad boy...                      Then the shy childhood friend.                      And now this guy. Was this "the mysterious exchange student" who would complete the Trifecta of High School Clichés? ))
 
-    . set @anmum, image sad
-    . set @nido, image shocked
-    . set @energen, image shocked
+    (( h: Are you looking for a classroom? ))
+
+    . set @milo, image think
+
+    . wait
+
+    (( m: Uh, no. I'm... ))
+
+    (( n: He gave me a look like he was sizing me up. Like he was judging whether or not he should let me in on a vital secret. ))
+
+    (( n: Maybe he was a time-traveller? In which case, I should probably go before he tries to rope me in on some kind of-- ))
+
+    (( m: Are you one of them? ))
+
+    (( h: Eh? ))
+
+    (( m: I, um... ))
+
+    (( n: It was like he was trying to ad-lib a test for me to prove something. ))
+
+    (( n: He was having trouble, so I thought... ))
+
+    . set @hana, image shocked
+
+    . wait
+
+    (( n: "What if?" ))
+
+    (( n: What if we have the same question? ))
+
+    . set @hana, image smile
+
+    . wait
+
+    (( n: So I decided to give him the test, instead of the other way around... ))
+
+    (( h: If you mean, do I realize I'm supposed to be the protagonist, then yes, I do. Not to boast. In fact, I don't want any of it. I've been trying to ignore it my whole life. ))
+
+    . set @hana, image neutral
+
+    . wait
+
+    (( n: Now, crazy at it was, I'd said this to people before. When I was younger. And they'd always laugh it off. ))
+
+    (( n: But this guy... ))
+
     . set @milo, image shocked
 
-    (( n: Well. that's...                    a<i> bad sign</i>... ))
+    . wait
 
-    (( n: Anna turned to Shiba. ))
+    (( m: Wait, you're the protagonist in this game? ))
 
-    . move @energen, x 10%, y 100%, xAnchor 45%, yAnchor 100%
-    . move @anmum, x 70%, y 100%, xAnchor 38%, yAnchor 75%
-    . move @nido, x 30%, y 100%, xAnchor 45%, yAnchor 100%
-    . move @milo, x 50%, y 100%, xAnchor 45%, yAnchor 100%
+    (( n: "This game"? ))
 
+    (( n: It was weird, but I suddenly felt a connection to this guy. I felt like I knew him better than Sen or anyone else I've known for years. ))
 
-    (( a: Awwww, what's the matter Shiba? ))
+    (( n: This guy I've only met for five minutes... Who was he? ))
+
+    (( h: I'm Hana. ))
+
+    . set @milo, image anobayan
+
+    . wait
+
+    (( m: I know. I could read your name above the dialogue box. ))
+
+    (( m: And before you ask, no. I can't read your inner thoughts. Just like you probably can't read mine. ))
+
+    (( h: Uh... Huh? ))
+
+    (( n: I couldn't tell what he was talking about. ))
+
+    (( n: He could tell, and he unintentionally gave me a disappointed look. Like I'd failed one of his tests. ))
+
+    (( n: Nevertheless, he introduced himself. ))
+
+    (( m: I'm Matthew. ))
+
+    . set @sen, image sad
+    . move @sen, x 50%, y 100%, xAnchor 45%, yAnchor 100%, :500
+
+    (( s: H-Hana! ))
+
+    (( n: Oh, God... ))
+
+    . set @sen, image worried
+
+    (( s: I-I-I-I w-was w-w-wondering, th-that is t-to say, I-I-I w-was w-wondering w-w-who is th-th-that g-guy is h-he a f-friend of y-y-yours, or is h-he , uh, b-b-b-b-b-b-b-bothering y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-y-you? ))
+
+    . set @milo, image shocked
+
+    (( m: ... ))
+
+    . wait
+
+    (( n: Sen had clearly stunned Matthew. ))
+
+    (( m: You almost broke the text box with that last one! ))
+
+    (( s: H-Huh?! ))
+
+    (( h: Uh, no. No, he's not bothering me, Sen. We were just talking. ))
+
+    . set @sen, image sad
+
+    (( s: Oh... ))
+
+    . wait
+
+    (( s: W-Well then... I-I'll leave you b-both alone then... ))
+
+    . move @sen, x 120%, y 100%, xAnchor 45%, yAnchor 100%, :500 
+
+    (( n: He looked like I'd just kicked a puppy or something. ))
+
+    (( n: This seemed to be how Kaemon and Sen operated. ))
+
+    (( n: Every time they saw me tak to another guy around the same age as us, Sen would act almost heartbroken, and Kaemon would respond with annoyed jealousy. ))
+
+    (( n: It was... creepy... ))
+
+    (( n: Matthew still hadn't snapped out from his awe of witnessing Sen break the World Record For The Most Amount of Stutter Per Second. ))
+
+    (( h: Uh, Matthew? ))
+
+    . set @hana, image smile
+
+    (( h: Helloooooooo? ))
+
+    (( n: I waved the flyer I still had with me in front of his face. ))
+
+    (( n: He blinked at it and suddenly came to life. ))
+
+    . set @hana, image shocked
+
+    (( m: Oh my God! ))
+
+    . wait
+
+    (( h: What? ))
+
+    (( m: That! ))
+
+    . set @hana, image neutral
+
+    (( m: That's it! That's what I'm looking for! ))
+
+    . wait
+
+    (( n: I glanced at the flyer. There was a photo of a suit of armor that would be on display during the school festival. ))
+
+    (( m: That's the exact same suit of armor that brought me here! ))
+
+    . set @milo, image anobayan
+
+    (( m: Look, I know this sounds crazy, but I'm pretty sure that armor can get us out of here. ))
+
+    . wait
+
+    (( n: He sounded like a crazy person. ))
+
+    (( h: You sound like a crazy person. ))
+
+    (( m: I know. But... please... ))
+
+    (( m: Help me... ))
+
+    (( h: ... ))
+
+    (( h: I can show you the display at the festival... ))
+
+    (( h: I looked again at the poster in my hand. ))
+
+    . set @hana, image shocked
+
+    (( h: ... Oh. ))
+
+    . wait
+
+    (( m: "Oh"? ))
+
+    . set @hana, image neutral
+
+    (( h: I just remembered. The festical's tonight. ))
+
+    . wait
+
+    . set @milo, image smile
+
+    (( m: Tonight? That's great! ))
+
+    . wait
+
+    . set @hana, image sad
+
+    (( h: Yeah, all we have to do now is wait and then go there. So that's a lucky coincidence... ))
+
+    . wait
+
+    (( n: I felt suspicious... ))
+
+    (( h: Why should I go with you? ))
+
+    . set @milo, image shocked
+
+    (( m: Huh? ))
+
+    . wait
+
+    (( m: Don't you want to get out of this place? ))
+
+    . set @hana, image neutral
+
+    (( h: Uh... Yeah. But. How do I know you're not just a trap to make me an anime protagonist? ))
+
+    . wait
+
+    (( m: What the heck are you talking about? ))
+
+    . set @milo, image neutral
+
+    (( m: Look, you don't have to leave with me, but at least show me to this armor display. Please? I really don't know my way around here. ))
+
+    . wait
+
+    (( h: ... ))
+
+    (( n: He seemed too good to be true... ))
+
+    (( n: I mean, a guy who just shows up, offering to take me somewhere I'll belong? This smacked of being a trap. ))
+
+    (( n: And yet... ))
+
+    (( h: ... ))
+
+    . set @hana, image smile
+
+    (( h: Can you wait here until my classes finish? ))
+
+    . hide @hana, :500
+    . hide @milo, :500
+    . hide @backgrounds, :500
+
+    . break
+
+    . set @backgrounds, image festival, :0
+    . show @backgrounds, :1000
+
+    (( n: Finally, it was nightfall. ))
+
+    . set @hana, image neutral, :0
+    . set @milo, image neutral, :0
+    . move @hana, x 20%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    . move @milo, x 80%, y 100%, xAnchor 45%, yAnchor 100%, :0
+    . show @hana, effect slide, direction right, :500
+    . show @milo, effect slide, direction left, :500
+
+    (( n: Matthew and I walked past all the crowds and festival stands filled with sparklers, food, and drinks. ))
+
+    (( n: At the edge of the festival, we found the steps leading up to the shrine. ))
+
+    (( h: Well, we're here. The shrine's at the top of that hill. ))
+
+    (( m: All the way up there? Great... ))
+
+    (( m: Do you know where the suit of armor is? ))
+
+    (( h: Not exactly. But, I mean, it must be around here somewhere. ))
+
+    (( n: We looked around... ))
+
+    (( m: ... ))
+
+    . set @milo, image anobayan
+
+    (( m: You... really took my whole story rather well. ))
+
+    . wait
+
+    (( n: It wasn't technically a question, but I knew it was. ))
+
+    (( h: Heh... I gues I already... well, not exactly knew, but I had a "feeling". That everything was off-kilter, you know? ))
+
+    (( h: I felt like the whole world was focused on me. Like the world was waiting for me to turn into the main character in an anime, or something. ))
+
+    (( m: ... ))
+
+    (( h: ... ))
+
+    (( h: Are you sure we're not fictional? ))
+
+    . set @milo, image shocked
+
+    (( m: ... ))
+
+    . wait
+
+    . set @milo, image neutral
+
+    (( m: ... Yes. Yes! Of course we're real. I feel real. Don't you? ))
+
+    . wait
+
+    (( h: Well, yeah, but... I bet everyone else here "feels" real. ))
+
+    . set @milo, image think
+
+    (( m: ... ))
+
+    . wait
+
+    (( h: ... So... How do you know? ))
+
+    . set @milo, image neutral
+
+    (( m: ... Because the alternative doesn't bear thinking about. ))
+
+    . wait
+
+    (( n: He didn't say it depressingly. Just matter-of-factly. ))
+
+    (( h: ... ))
+
+    (( h: Once we find what you're looking for... Do you think we'll end up somewhere we belong? Or will we just end up in another game?                  And then another?))
+
+    (( m: Well, we've gotta try... ))
+
+    (( m: It's not the most hopeful plan, I know. But it's all I've got. ))
+
+    (( n: I nodded slowly. ))
+
+    (( n: I decided to turn the conversation over to something else... ))
+
+    . set @hana, image grin
+
+    (( h: What are you wearing? ))
+
+    . wait
+
+    . set @milo, image shocked
+
+    (( m: Huh? ))
+
+    . wait
+
+    . set @hana, image smile
+
+    (( h: That white bear-thing around your neck. ))
+
+    . wait
+
+    . set @milo, image smile
+
+    (( m: Oh, this thing... Yeah, it wasn't my idea. Anna gave it to me. ))
+
+    . wait
+
+    (( m: I gave her one of my letterman jackets and she gave me one of her scarfs in return. ))
+
+    (( m: She was still wearing the same red and white jacket when I... ))
+
+    . set @milo, image think
+
+    (( m: ...                    When I left. ))
+
+    . wait
+
+    . set @hana, image neutral
+
+    (( n: Then a thought occured to me... ))
+
+    . wait
+
+    (( h: Was Rebecca a real person? ))
+
+    (( m: ... ))
+
+    (( m: ... I don't know. ))
+
+    (( h: Do you love her? ))
+
+    (( m: ... ))
+
+    (( m: Yes... Yes, I loved her. ))
+
+    (( m: Why do you ask? ))
+
+    (( h: It's just... ))
+
+    (( h:   You referred to her in the past tense. Like she was dead. Or you left her or something. ))
+
+    (( m: ... ))
+
+    (( m: I loved her. But now... I don't know if she ever even existed... ))
+
+    (( m: Can you love someone if they never existed? ))
+
+    (( h: ... ))
+
+    (( m: ... ))
+
+    (( m: Let's stop talking about Rebecca. ))
+
+    (( h: Yeah... Okay... ))
+
+    (( n: I began thinking about my Dad... ))
+
+    (( n: Did this mean that he wasn't real? But how could that be? How was I born if he wasn't real? ))
+
+    . set @hana, image depress
+
+    (( n: I felt like crying... ))
+
+    . wait
+
+    (( h: ... ))
+
+    . set @hana, image neutral
+
+    (( h: This is too weird. ))
+
+    . wait
+
+    (( n: I couldn't stay on that thought for long, because we were interrupted... ))
+
+    (( k: Hey! ))
+    . show @kaemon
+    . set @kaemon, image neutral
+    . move @kaemon, x 50%, y 100%, xAnchor 45%, yAnchor 100%, :500
+
+    (( n: Kaemon?! ))
+
+    . set @milo, image shocked
+
+    (( n: Kaemon had somehow managed to spot us and was staring daggers into Adrian. ))
+
+    (( k: Don't tell me you're trying to steal her affections! ))
+
+    (( m: Huh? No? ))
+
+    (( n: There Kaemon went, juming the gun again. ))
+
+    . set @hana, image angery
+
+    (( h: No! ))
+
+    . wait
+
+    (( n: Are you kidding me? He thinks Adrian's a romantic rival just because I talked to him for five minutes? ))
+
+    . set @kaemon, image knife
+    . set @hana, image shocked
+
+    (( n: Suddenly, he pulled out a switchblade knife. ))
+
+    . wait
+
+    (( k: Just who are you?! ))
+
+    (( h: Kaemon, are you crazy?!? ))
+
+    (( m: !?! ))
+
+    (( h: Don't be stupid! Put the knife down! ))
+
+    (( n: I suddenly remembered that saying, "Don't be stupid" was usually followed immediately by someone doing something stupid. ))
+
+    (( k: I... ))
+
+    . show @ghost, effect slide, direction top, :700
+    . wait
+    . hide @ghost, :500
+    . break
+
+    (( k: I... I can't. I won't give up!))
+
+    (( n: Was... What was that behind him? ))
+
+    . move @kaemon, x 65%, y 100%, xAnchor 45%, yAnchor 100%, :2000
+
+    (( k: Nobody's gonna take you away from me!                     I'll kill them before that ever happens! ))
+
+    . wait
+
+    (( m: You're outta your mind! ))
+
+    (( n: I looked around. Where was everybody?! ))
+
+    (( n: Then I saw it. ))
+
+    (( n: Right at the top of the stairs, inside the shrine, I saw a suit of armor. ))
+
+    (( n: I darted up the stairs.                           Adrian quickly followed. ))
+
+    . hide @hana, :500
+    . hide @milo, :500
+
+    (( k: Hey! ))
+
+    . hide @kaemon, :500
+
+    (( n: We were halfway up the stairs... ))
+
+    (( n: Kaemon was close behind... ))
+
+    (( k: Hana!                 Wait!                  Please!            I love you! ))
+
+    (( k: I know, Hana. You're shocked because I've been keeping my true feelings so well-hidden, but--))
+
+    (( h: Leave us alone! ))
+
+    (( k: No one loves you like I do! ))
+
+    (( h: No kidding! ))
+
+    (( n: Three-quarters up the stairs... ))
+
+    (( n: I was ahead of Matthew. ))
+
+    (( h: Come on, Matthew! We're almost there! ))
+
+    (( k: HANA! ))
+
+    (( n: We reached the top... We just had to make it to the shrine... ))
+
+    (( h: There! ))
+
+    (( n: We made it. And just in the nick of time! ))
+
+    (( n: We touched the suit of armor, and-- ))
+
+    (( v: Antique Paladin has joined your party. ))
+
+    (( h: Huh? ))
+
+    (( n: Matthew: Where... are we? ))
+
+    (( n: Hana: An RPG... ))
+
+    (( n: Random encounter: A Ghost attacks! ))
+
+    (( n: Matthew: It's Clara! ))
+
+    (( n: Hana: What?! ))
+
+    (( n: Battle: Start! ))
+
+    (( n: It is Antique Paladin's turn... ))
 
     . choice :
-        . option label "...", scene dotdot
-        . option label "He's scared of the house", scene scared
+        . option label "Attack.", scene attackpaladin
+        . option label "Defend.", scene defendpaladin
+        . option label "Magic.", scene magicpaladin
+    --
+--
+
+. scene #attackpaladin :
+
+    (( n: Antique Paladin attacks... ))
+
+    (( n: Ghost loses 0 HP. ))
+
+    (( n: Ghost attacks... ))
+
+    (( n: Antique Paladin loses 9999 HP. ))
+
+    (( n: Antique Paladin has been defeated. ))
+
+    . goto scene paladindefeat
+
+--
+
+. scene #defendpaladin :
+
+    (( n: Antique Paladin's defense increased. ))
+
+    (( n: Ghost attacks... ))
+
+    (( n: Antique Paladin loses 9999 HP. ))
+
+    (( n: Antique Paladin has been defeated. ))
+
+    . goto scene paladindefeat
+
+--
+
+. scene #magicpaladin :
+
+    (( n: You do not have enough mana. ))
+
+    . choice :
+        . option label "Attack.", scene attackpaladin
+        . option label "Defend.", scene defendpaladin
+        . option label "Magic.", scene magicpaladin
     --
 
 --
 
-    . scene #dotdot :
+. scene #paladindefeat :
 
-    . set @anmum, image sad
+    (( n: Matthew: Uh-oh... ))
 
-    (( m: ... ))
+    (( n: Hana: How can Clara be here?! ))
 
-    (( n: I held my tongue. But still... That can't be good... ))
+    (( n: Matthew: I don't know! ))
 
-    (( n: What could spook her like this? ))
+    (( n: It is Matthew's turn... ))
 
-    . goto scene next
-
---
-
-    . scene #scared :
-
-    (( m: I think he's scared of the house. ))
-
-    (( a: Why? ))
-
-    (( m: I dunno... ))
-
-    (( n: ... Because it looks like the mansion's architect was a fan of Edward Gorey? ))
-
-    (( m: I guess something upset her. Animals can sense things, y'know? ))
-
-    (( a: Maybe it was a squirrel or something. ))
-
-    . goto scene next
-
---
-
-    . scene #next :
-
-    . set @anmum, image smile
-
-    (( a: Nevermind. Let's go inside. ))
-
-    (( n: We looked around.  ))
-    
-    (( n: I could see from here that there was a study room that led to a massive grand ballroom. It was the kind of grand ballroom that I could also imagine doubling as a a Final Boss arena. ))
-    
-    (( m: Oh wow its actually really nice! ))
-    
-    (( n: I stared at the piano that was giving off a creepy vibe. It was the only thing in the living room that didn't sit right with me. ))
-    
-    (( ni: That piano is giving me the chills. ))
-    
-    (( a: I prefer to call it rustic charm! I love how old-timey this place looks. ))
-    
-    (( m: ... ))
-    
-    (( a: What? Scared? ))
-    
-    (( m: No! ))
-    
-    (( m: Well... I don't think someone's gonna jump out and shout, "A boogie woogie boo," but I still feel... a huge amount of unease... ))
-    
-    (( a: Don't worry! I'll protect you from anything in this household. ))
-    
-    (( m: ... ))
-    
-    (( n: Anna started glitching out again. It happened from time to time. ))
-    
-    (( n: It was the first thing that made me realize that I was in a game... ))
-    
-    (( n: It used to freak me out... but now... the "novelty's" worn off. Or the shock's worn off, whatever you want to call it. ))
-    
-    (( m: ... ))
-    
-    (( a: ...Matthew? Earth to Matthew? ))
-    
-    (( n: I snapped out of it. ))
-    
-    (( m: Uh! Yeah?! Anna? ))
-    
-    (( a: I said, "I'll protect you!" ))
-    
-    (( m: Sure, sure... ))
-    
-    (( n: Now I know what you might be thinking. ))
-    
-    (( n: If we were moving into this house, why were we acting like we've never set foot in this house before? ))
-    
-    (( n: Apparently, this is a world where you pay an estate agent a lot of money and just hope for the best. ))
-    
-    (( n: You just cross your fingers and wish really hard... ))
-    
-    (( n: ... And they magically find a beautiful house you can afford to lodge in. ))
-    
-    (( w: We're leaving this crazy house! ))
-    
-    (( n: A young couple came lumbering down the stairs. They were each carrying a suitcase. ))
-    
-    (( man: I've had it! I can stand for a lot of things, but not this! ))
-    
-    (( n: And with that, the couple left. ))
-    
-    (( av: My, my... ))
-
-    (( n: A person--who's gender was unclear to me--aproached us. I think he's a guy? He was wrapped in several layers of winter clothing. ))
-    
-    (( n: Despite the fact that it wasn't winter... ))
-    
-    (( t: It seems another family has left us. With another to replace them. It's like a revolving door around here. ))
-    
-    (( a: Umm... Who are you? ))
-    
-    (( t: Me? Well... I'm the old man but you can call me Tom. ))
-    
-    (( m: Uhh... Why Tom? ))
-    
-    (( t: Well, that's my name: The Old Man!))
-    
-    (( m: Ohhhh... T-O-M... The Old Man! That's pretty funny. ))
-    
-    (( n: His voice was also ambiguous. And not just in terms of gender. The voice sounded ancient, childish yet wise, all at the same time. ))
-    
-    (( a: I'm Anna and this is Matthew. ))
-    
-    (( m: Why were those people leaving? ))
-    
-    (( t: They're scared of the spirit who dwells in this households. It's a terrible story. One fraught with tragedy... ))
-    
-    (( t: ... Would you like to hear the story? ))
-    
-    (( n: I told him that, no, we wouldn't, and Tom began... ))
-
-    (( n: The sweater layered character told Anna and I a pretty full and complete information about the mansion. ))
-    
-    (( n: He told us about how the structure was originally commissioned in the eighteen-hundreds. ))
-    
-    (( n: And about the original owners of the mansion. ))
-    
-    (( n: Miro and Clara were a couple who'd recently married before moving into their new home. Miro first met Clara when she became his assistant for his magic act. This eventually led to them falling in love with each other. ))
-    
-    (( n: "Miro the Magician", as he was called, was an illusionist. ))
-    
-    (( n: He was also rumored to have dabbled in two dubious things: Adultery and the Dark Arts. ))
-    
-    (( n: Though neither was ever proven publicly... ))
-    
-    (( n: He was apparently successful enough as a magician to afford the mansion, and continued performing with Clara for many years, until... ))
-    
-    (( n: Because there's always an "Until..." with these stories... ))
-    
-    (( n: Until... ))
-    
-    (( n: For some reason, my mind kept wandering... But I did my best to focus on Tom's clichéd story... ))
-    
-    (( n: ... ))
-    
-    (( n: This place really gives off a creepy vibe... ))
-    
-    (( a: So what happened to the magician and his wife? ))
-    
-    (( t: They disappeared! ))
-    
-    (( n: I sighed. No one seemed to notice. ))
-    
-    (( n: Really? "The magician disappeared?" How ironic. Very cute. ))
-    
-    (( t: They completely vanished! ))
-    
     . choice :
-        . option label "Were they ever found?", scene found
-        . option label "(snark)Vanished? That sounds like a great magic act!", scene snark
+        . option label "Attack.", scene attackmatthew
+        . option label "Defend.", scene defendmatthew
+        . option label "Special Attack", scene spamatthew
     --
 --
 
-. scene #found :
-    (( m: Were they ever found? ))
-    
-    (( t: Eventually Miro was found dead in the basement. Of this very mansion. ))
-    
-    . goto scene scene_two   
---
+. scene #attackmatthew :
 
-. scene #snark :
-    (( m: That must have gone well with the audience. ))
+    (( n: Matthew attacks... ))
 
-    (( t: It wasn't a magic trick! They had vanished from their household without taking anything with them... ))
+    (( n: Ghost loses 0 HP. ))
 
-    (( n: He took me seriously... I could see that my sarcasm was once again wasted in this world. ))
+    (( n: Ghost attacks... ))
 
-    (( t: No, no, they became missing for several days. Eventually, Miro was found dead in the basement. Of this very mansion. ))
+    (( n: Matthew loses 9999 HP. ))
 
-    . goto scene scene_two
+    (( n: Matthew has been defeated. ))
+
+    . goto scene matthewdefeat
 
 --
-    
-. scene #scene_two :
-    (( t: His body was covered with long, deep slash marks, like he'd been scratched to pieces by some sort of long-fingered animal... ))
-    
-    (( t: But his wife was never found... ))
-    
-    (( t: I think Clara knew that her husband had been cheating on her. Maybe when she found out, she confronterd him with it. ))
-    
-    (( t: Maybe Miro kept a book filled with black magic and that had something to do with it... ))
-    
-    (( t: But I think something very dark happened on the night that they disappeared... ))
-    
-    (( t: And I believe that Clara's ghost still haunts this place to this day. ))
-    
-    (( t: It would explain all the strange things in this place. Eerie noises. Furniture rearranging itself after you leave the room... ))
-    
-    (( n: Then Tom suddenly stopped his history lecture. ))
-    
-    (( t: Do you believe in ghosts? ))
-    
-    (( a: I've never really thought of it seriously before, but... no. I don't believe in ghosts. Sorry. ))
-    
-    (( t: It's fine! No need to apologise to me. ))
-    
-    (( t: And what about your boyfriend? What does he think? ))
-    
-    (( m: I don't know... ))
-       
-    . choice :
-        . option label "Why are you telling us this?", scene why
-        . option label "How do you know all this?", scene how
-    --  
+
+. scene #defendmatthew :
+
+    (( n: Matthew's defense increased. ))
+
+    (( n: Ghost attacks... ))
+
+    (( n: Matthew loses 9999 HP. ))
+
+    (( n: Matthew has been defeated. ))
+
+    . goto scene matthewdefeat
+
 --
 
-. scene #why :
-    (( m: Why are you telling us all this? Won't that make us more likely be the next family to move out? ))
+. scene #spamatthew :
 
-    (( n : Was this person trying to convince us to leave? ))
-
-    (( t: I just thought it was interesting and important for you to know this household's backstory. ))    
-    
-    (( t: It fascinates me. Its actually the reason why I moved here in the first place. ))
-
-    . goto scene sum
---  
-
-. scene #how :
-    (( m: How do you know all this? ))
-
-    (( t: I researched this mansion's history laboriously. ))
-
-    (( t: I think it's important to know the history of a home that's managed to stick around for over a hundred years... ))
-
-    . goto scene sum
---
-
-. scene #sum :
-
-    (( m: But why are you staying here if you believe that there is a ghost? ))
-
-    (( t: I've... made this an occupation of mine. ))
-
-    (( t: In the past, I've been proven to... have a knack for solving ghost's problems and helping them find peace. ))
-    
-    (( a: Your'e a ghost hunter? ))
-
-    (( t: Not a hunter, my dear. I'd prefer to think myself as a ghost ~whisperer~ ))
-
-    (( m: ... ))
-
-    (( t: So, to sum it all up... ))
-
-    (( t: I believe that there's going to be strange changes coming soon in your life. Something to do with this mansion's dark past. You'd best be careful. ))
-
-    (( t: I mean, I know you've said that you don't believe in ghosts. You may think that this is just a huge joke... ))
-
-    (( a: No, no. This was really interesting! Thank you. ))
-
-    (( t: You're welcome... ))
-
-    (( n: Interesting?! ))
-
-    (( t: Well, I'd better get going. That's all I have left to say. ))
-
-    (( t: I'll see you later. ))
-
-    (( n: With that, Tom left. ))
-
-    (( n: Anna turned to me. ))
-
-    (( m: So... what now? ))
-
-    (( a: Well, we still have a lot of unpacking to do... But I kinda want to do a bit of exploring first. ))
-
-    (( a: Why don't we leave the rest of the luggage till after later? ))
-
-    (( m: It's only two suitcases. ))
-
-    (( m: Look, I can do it myself. You can explore the house and I'll catch up with you later. ))
-
-    (( a: Okay! ))
-
-    (( n: Welp. Its official. We're trapped in a horror game. ))
-
-    (( n: A badly-written horror game.))
-
-    (( n: Nevermind. I'll just "go and get the luggage", shall I? ))
-
-    (( n: Is this an adventure game? Because that sounded like a lousy first quest. ))
-
-    (( n: I pulled out the two, improbably-sized suitcases. ))
-
-    (( n: I call them that because that's all we packed. There was no moving van. ))
-
-    (( n: There's travelling light, and then there's this... ))
-
-    (( n: Our whole previous life was the contents of these two suitcases... ))
-
-    (( m: ... ))
-
-    (( n: With a heave, I lifted them up to carry them back to the mansion. ))
-
-    (( n: After about five years or so, I eventually finished my trek up the front path, and made it back to the house.))
-
-    (( n: I'll go put the luggage upstairs. ))
-
-    (( n: No way... ))
-
-    (( n: Right in front of me was... a ghost that looked like the woman from Miro's magic act poster. Clara. ))
+    (( n: You do not have enough stamina. ))
 
     . choice :
-        . option label "What do you want?!", scene what
-        . option label "Anna!", scene anna
+        . option label "Attack.", scene attackmatthew
+        . option label "Defend.", scene defendmatthew
+        . option label "Special Attack", scene spamatthew
+    --
+
+--
+
+. scene #matthewdefeat :
+
+    (( n: Hana: Matthew! ))
+
+    (( n: It is Hana's turn... ))
+
+    . choice :
+        . option label "Attack.", scene attackhana
+        . option label "Defend.", scene defendhana
+        . option label "Special Attack", scene spahana
     --
 --
 
-. scene #what :
-    (( m: What do you want?! ))
+. scene #attackhana :
 
-    (( g: ... ))
+    (( n: Hana attacks... ))
 
-    (( n: It wouldn't answer... ))
+    (( n: Ghost loses 0 HP. ))
 
-    (( m: Ahh! ))
+    (( n: Hana: W-Wait! No! ))
 
-    . goto scene matthew
+    (( n: Ghost attacks... ))
+
+    (( n: Hana loses 9999 HP. ))
+
+    (( n: Matthew has been defeated. ))
+
+    . goto scene hanadefeat
+
 --
 
-. scene #anna :
-    (( m: ANNA! ))
+. scene #defendhana :
 
-    (( n: That came out louder than expected. ))
+    (( n: Hana's defense increased. ))
 
-    (( m: Help! ))
+    (( n: Hana: W-Wait! No! ))
 
-    . goto scene matthew
+    (( n: Ghost attacks... ))
+
+    (( n: Hana loses 9999 HP. ))
+
+    (( n: Hana has been defeated. ))
+
+    . goto scene hanadefeat
+
 --
 
-. scene #matthew :
-    (( a: MATTHEW?! ))
+. scene #spahana :
 
-    (( m: Ah! ))
-
-    (( a: What's wrong, Matthew?! ))
-
-    (( n: After I finished restarting my heart, I answered her. ))
-
-    (( m: I-I saw a ghost!  It was the ghost of a woman. I think she was the magician's wife. ))
-
-    (( a: She relaxed and gave me a pitying look. ))
-
-    (( m: Didn't you see it?! ))
-
-    (( a: Oh, Matthew. You probably just thought you saw something. I mean, this drafty house... ))
-
-    (( n: Yeah, "drafty". Sure... ))
- 
-    (( n: "Oh, you're right, Anna. Drafts do get my imagination aflutter!" ))
-
-    (( a: Now, if that's everything, I'm gonna go back to exploring the ground floor. Okay? ))
-
-    (( m: Yeah, just... be careful, alright? ))
-
-    (( a: I will! ))
-
-    (( n: Just my luck. Just as Anna comes, the ghost vanishes. ))
-
-    (( n: Before I had wondered if the ghost was going to be real, or someone in a mask. Either way, it would've been dangerous, but after that adventure, I knew that the ghost was real. ))
-
-    (( n: I had a feeling that Anna is "safe" from the ghost. Well, as safe as she could be...  ))
-
-    (( n: What I mean is, I was trying to imagine this as a game written by someone else. I thought back to horror films and generally speaking, the young woman who had a boyfriend was usually "safe". ))
-
-    (( n: Their boyfriend, on the other hand... ))
-
-    (( m: ... ))
-
-    (( n: ...I continued upstairs... ))
-
-    (( n: ... ))
- 
-    (( n: Well, this wasn't our bedroom... ))
-
-    (( n: I had accidentally stepped into the attic. Dust-covered toys filled the room. ))
-
-    (( n: Toys? Did Clara and Miro have children? Tom didn't mention that. ))
-
-    (( n: Were they planning on having children, perhaps? Did something happen? ))
-
-    (( n: ... ))
-
-    (( a: AAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHH!!!!!!!! ))
-
-    (( m: Anna! ))
-
-    (( n: I found Anna on the ground. I rushed to her aid and helped her up. ))
-
-    (( m: What happened?! ))
-
-    (( a: Th-There! ))
-
-    (( n: She pointed to the wall... ))
-
-    (( n: The letters were all in caps, and it appeared that the author tried her best to try and transcribe their own screaming. ))
- 
-    (( n: It was written in blood and looked like it was going to be hell to scrub out. ))
-
-    (( n: It said, "GET OUT"... ))
-
-    (( n: But by now, it really should have said, "GET OUT, you idiot." ))
-
-    (( a: Did you see it run past you? Did you see what happened?! ))
-
-    (( m: I heard you scream and I rushed over. No one passed me. ))
-
-    (( e: How could you miss it?! I saw it! I saw the ghost! ))
+    (( n: You do not have enough stamina. ))
 
     . choice :
-        . option label "Maybe it was a "draft"...", scene draft
-        . option label "...", scene kek
+        . option label "Attack.", scene attackhana
+        . option label "Defend.", scene defendhana
+        . option label "Special Attack", scene spahana
     --
---
-
-. scene #draft :
-   (( m: Maybe it was a draft... ))
-
-   (( a: This is no time for jokes! ))
-
-   (( a: Alright! I admit it! I was wrong! There was a ghost, like you said... ))
-
-   (( a: You don't have to be a jerk about it... ))
-
-   (( m: Sorry... ))
-
-   . goto scene right
---
-
-. scene #kek :
-   (( m: ... ))
-
-   (( n: Sometimes it's best to say nothing at all... ))
-
-   . goto scene right
---
-
-. scene #right :
-    (( a: ... ))
-
-    (( a: You were right Matthew...))
-
-    (( m: I'd prefer if I wasn't... ))
-
-    (( a: ... ))
-
-    (( a: Tom said that the plan on doing a séance... ))
-
-    (( m: Séance? ))
-
-    (( a: You know? That thing in the movies where a group of people gather around to try and contact ghosts. ))
-
-    (( m: I know what a séance is... ))
-
-    (( n: What? We're just going to forget about the malevolent ghost in this mansion?! ))
-
-    (( a: Tom says it'll be fun! ))
- 
-    (( n: Yep, I guess we were... ))
-
-    (( m: Anna, don't you think we should leave? It's not safe here! ))
-
-    (( a: What? But... ))
-
-    (( a: But this is our home now. ))
-
-    (( m: ... ))
-
-    (( m: Fine... I'll see you later. ))
-
-    (( n: Trying to convince her to go wasn't going to work. I realized that. ))
-
-    (( n: This was all just a game, after all. And not even one of the good ones. ))
-
-    (( m: ... ))
-
-    (( n: Wait, what's this? ))
-
-    (( n: Behind a section of ripped wallpaper and worn wooden paneling, there was a marble tile. And it clearly didn't belong there. ))
-
-    (( n: I pressed down on the tile and a nearby wall opened up, revealing a pitch-black corridor. ))
-
-    (( t: My goodness! You found a secret passage way?! ))
-
-    (( m: Really? You're surprised? In this house?! ))
-
-    (( t: Anna and I are going to perform a séance in the vestibule. Would you care to join us? ))
-
-    (( m: Yeah, Anna told me already. And I'll pass. ))
-
-    (( m: Also, are you sure its wise to do a séance when there's a ghost that wants everyone to leave? ))
-
-    (( t: There won't be any way to give the ghost true peace unless we can find a way of communicating with her. ))
-
-    (( t: I hope you change your mind though. The more people, the more power. ))
-
-    (( t: I'll be in the vestibule if you want to join in. ))
-
-    (( m: ... ))
-
-    . goto scene tb
---
-
-. scene #tb :
-
-   (( n: Enough was enough. No more "letting things unfold". If I was in a horror game, at least I could choose how the story ends. ))
-
-   (( n: I had two choices: Win the game, or find a way out of the game... ))
-
-   (( n: The problem was, I had no idea how to go about doing either... ))
-
-   (( n: Where should I start? ))
-
-    . choice :
-        . option label "Follow Anna and Tom back to the vestibule.", scene seance
-        . option label "Back to the attic.", scene attic
-        . option label "Explore the secret passage way.", scene passageway
-    --
---
-
-. scene #seance :
-   (( n: Oh what the hell, I'll join them. ))
-
-   (( n: I decided to meet up with Anna and Tom for the séance))
-
-   (( n: Anna was trying to shoo Shiba out of the room. ))
-
-   (( a: Sorry Shiba! You wait over in the sitting room. ))
-
-   (( t: We can do it here. I've set up everything we need in the table. ))
-
-   (( n: I looked... ))
-
-   (( n: There was an old-looking dagger with a black handle. ))
-
-   (( m: What's that? ))
-
-   (( t: It's called an Athame. It's a ceremonial blade used for rituals . It's a tool of medieval origin, I've been told. ))
-
-   (( t: It's also said to have supernatural and magical properties. ))
-
-   (( t: Basically, it's a knife that also doubles as a wand! ))
-
-   (( m: Uhh... cool... ))
-
-   (( t: I'll start the séance now... ))
-
-   (( t: Everyone, hold hands.))
-
-   (( n: We held hands. ))
-
-   (( t: Now I'm going to sing a chant... ))
-
-   (( t: They say that those from beyond respond to the vibrations of music. ))
-
-   (( m: Who's "they?" ))
-
-   (( t: Well, er, I do. Mostly. ))
-
-   (( n: Great... ))
-
-   (( a: Hey, Tom?! I have a weird feeling... ))
-
-   (( a: Like a... spooky feeling? ))
-
-   (( n: Oh boy... ))
-
-   (( t: That's good. Perhaps you're picking up something using a second sight. ))
-
-   (( t: Ahem, I'll do the chant now... ))
-
-   (( n: Tom coughed to clear his throat. ))
-
-   (( t: UuuuuuuuuuuUUUUUUUUUUUUUUUUUUUUUUUUuuuuuuuuuuuu              UUUUU                   uuuuuuuuuuuuuuuu...  ))
-
-   (( t: UUUUUUUUuuuuuuuuuuuuuuuUUUUUUUUUUUUUuuu                 UUUUUUuuuuuuu... ))
-
-   (( t: UUUUUUUUUUUUUUUUUuuuuu           uuuuuuuuuuu             UUUuUUUUuU       UuUUUUuuuuuuu            uuuUUUUUUuuu... ))
-
-   (( n: Really? That was the chant? ))
-
-   (( t: ... ))
-
-   (( a: ... ))
-
-   (( m: ... ))
-
-   (( t: ... ))
-
-   (( n: Thankfully, nothing happened. ))
-
-   (( n: Then Anna leaned towards me and whispered in my ear. ))
-
-   (( a: Hey, Matthew? Guess what? I don't have that weird feeling anymore. ))
-
-   (( n: I was just about to tell Anna the horrible implications for saying something like that, when the Universe did it for me.. ))
-
-   (( n: As if on cue, the lights went out. ))
-
-   (( n: "Yep. Something is definitely gonna happen.", I thought to myself. ))
-
-   (( a: Ahh!! ))
-
-   (( n: We turned to see the ghost right in front of us! ))
-
-   (( t: Th-This wasn't meant to happen! ))
-
-   (( m: What do we do?! ))
-
-   (( t: Well... ))
-
-   (( n: Tom tried to reason with the spirit. ))
-
-   (( t: Clara, please. What are you doing? This wasn't-- This isn't how it goes. ))
-
-   (( n: It wasn't working. Of course it wasn't working. ))
-
-   (( g: ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞   M̩̖̳͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞   i̜̠̗̬̼͉  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  r̦̭̩͉̳͙  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  o̹̫͍̳̟̺͚͡   ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞ ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞ ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞ ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞M̖̳͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  a̠̗̬̼͉  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  ț̭̩͉̳͙  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  t̫  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  e̖̳͞  ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͞͞  w̠̗̬̼͉̭̩͉̳͙̫͍̳̟̺͚͍̳̟̺͚͡ ̳̟̺͚̖̳̠̗̬̼͉̦̭̩͉̳͙̫̖̳̠̗̬̼͉͡͡͞͞))
-
-   (( n: I glanced around for a makeshift weapon... ))
-
-   (( n: How do you kill a ghost? ))
-
-   (( n: I took Tom's Athame dagger from the table. ))
-
-   (( n: I held it threateningly towards the ghost. ))
-
-   (( m: Leave us alone! ))
-
-   (( n: The ghost kept approaching us... Her floating "stride" didn't even break... ))
-
-   (( m: STOP IT! ))
-
-   (( n: I swung the Athame and cut the ghost straight throught the middle. ))
-
-   (( n: The ghost of Clara torn in half like a cloud of smoke. ))
-
-   (( n: She no longer appeared solid, like a person... ))
-
-   (( n: Clara slowly faded into the mist... ))
-
-   (( n: And just like that... She was gone for good. ))
-
-   (( t: Matthew... ))
-
-   (( a: Matthew, you did it! ))
-
-   (( m: I... ))
-
-   (( n: ... I did it... ))
-
-   (( n: I was able to save everyone. ))
-
-   (( n: I'd "won" the game... ))
-
-   (( n: Now, hopefully, my life would be better, right? ))
-
-   (( n: I mean, what happens after a video game ending? ))
-
-   (( n: Error: tech_lotus corrpted... redacted_Life has encoutered an error and needs to shut down. ))
-
-   (( n: Host is unresponsive. Attempting to reconnect to host. Please wait... ))
-
-   (( n: Unable to reconnect to host... HOST_MATTHEW HAS BEEN TERMINATED . ))
-
-   . goto scene bad_end
---
-
-. scene #attic :
-   (( n: I decided to go back and investigate the attic. )) 
-
-   (( n: I decided to return to the attic. I wanted to explore the room some more. ))
-
-   (( n: Maybe I could find some answers here... ))
-
-   (( n: !!! ))
-
-   (( n: Uh-oh... ))
-
-   (( n: I froze. Literally. The temperature in the room seemed to take a sudden drop. I could practically see my breath in little puffs of steam. ))
-
-   (( n: Wait a minute... What am I doing?! ))
-
-   (( n: I was standing in a room, on my own, in a mansion where I knew there was a ghost. ))
-
-   (( n: I mean, it's a game. I know it's just a game. But what does that make me? ))
-
-   (( n: Can I still die? Will I come back? Will it hurt? Will I remember dying? ))
-
-   (( n: A thousand questions where in my mind. ))
-
-   (( n: Then I turned to another thought. One that had occured to me ages ago, but had brushed it off because it couldn't bear thinking about it... ))
-
-   (( n: What if I wasn't in a game? ))
-
-   (( n: What was that thing called? "The Truman Show delusion"? When someone thinks they're the main character in a reality TV show? ))
-
-   (( n: Was there a name for the video game equivalent of that? ))
-
-   (( n: I started thinking... Was I a guy who'd realised he was in a game... ))
-
-   (( n: Or was I a man who was going mad in a supernatural mansion? ))
-
-   (( n: Or was I just mad? ))
-
-   (( n: Could I really be going mad? ))
-
-   (( n: ... ))
-
-   (( n: I had been prolonging it enough with my thoughts... I had to face whatever it was behind me. ))
-
-   (( n: I turned around... ))
-
-   (( n: ... ))
-
-   (( n: Nothing... ))
-
-   (( m: Thank God. ))
-
-   (( n: !!! ))
-
-   . goto fatal_error
 
 --
 
-. scene #passageway :
-   (( n: I was feeling in a cautious mood, so I of course decided to explore the damp, dingy tunnel. ))
+. scene #hanadefeat :
 
-   (( n: I walked down the dark, creepy stairs. ))
+    (( n: All party members are dead. Game Over. ))
 
-   (( n: I reached the basement, which turned out to be a cellar. ))
-
-   (( n: Barrels filled with wine lined all over the room. ))
-
-   (( n: At least, I think it was wine. But with how the rest of this mansion was designed, there were probably seven or eight barrels that probably opened up to a secret passage... ))
-
-   (( n: I took another look around and noticed... something else. ))
-
-   (( n: There was an old suit of armor on a wooden stand. ))
-
-   (( n: How did I miss it? Was it there before? ))
-
-   (( m: ... ))
-
-   (( m: Ahh... A-Anyone in there? ))
-
-   (( n: Thank God... ))
-
-   (( p: ... ))
-
-   (( n: It started to glitch. ))
-
-   (( n: I was strangely... drawn to it. Like a moth to a flame. ))
-
-   (( n: I mean, it wasn't just an attraction to it--I mean, I love medieval things. But this feeling was more like... ))
-
-   (( n: ... Like this suit of armor was different from everything else in this world. ))
-
-   (( n: Like it didn't belong here... ))
-
-   (( n: Like me. ))
-
-   (( n: I touched it, and... ))
-
-   (( n: Error: Lost connection to HOST_MATTHEW. ))
-
-   (( n: Searching for new host... HOST_HANA found. Reconnecting to new host... Please wait... ))
-
---
-
-. scene #bad_end :
-   (( v: Tell me... Are you happy with this fate? ))
-
-   . choice :
-     . option label "Yes.", scene quit
-     . option label "No.", scene no
-   --
---
-
-. scene #no :
-   (( v: Then I'll turn back time... ))
-
-   . goto scene tb
---
-
-. scene #fatal_error :
-   (( n: You had made a fatal error. Would you like a second chance? ))
-
-   . choice :
-        . option label "Second chance", scene tb
-        . option label "Quit to menu", scene quit
-   --
-
---
-
-. scene #quit :
-
---
-
-. scene #game_start :
-    . restart
 --
