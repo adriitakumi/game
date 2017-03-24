@@ -6,14 +6,14 @@
     . trigger name game_menu_key_trigger, action activate
     
     . set @backgrounds, image hallway, :0
+    . set @ambience, track classroom
     . set @hana, image neutral, :0
     . set @kaemon, image neutral, :0
     . set @sen, image sad, :0
     . set @shiba, image shiba, :0
     . set @logo, image logo, :0
     . set @ghost, image smile, :0
-    . set @milo, image shocked, :0
-    . set @music, track legend
+    . set @milo, image shocked, :0 
     
     . move @hana, x 83%, y 100%, xAnchor 45%, yAnchor 100%, :0
     . move @logo, x 50%, y 50%, xAnchor 50%, yAnchor 50%, :0
@@ -31,6 +31,7 @@
     
     . hide @logo, :500
     . show @backgrounds, :1000
+    . play @ambience
     
     . wait
 
@@ -536,11 +537,14 @@
     . hide @hana, :500
     . hide @milo, :500
     . hide @backgrounds, :500
+    . stop @ambience
 
     . break
 
     . set @backgrounds, image festival, :0
+    . set @ambience, track festival
     . show @backgrounds, :1000
+    . play @ambience
 
     (( n: Finally, it was nightfall. ))
 
@@ -720,12 +724,15 @@
     (( n: I couldn't stay on that thought for long, because we were interrupted... ))
 
     (( k: Hey! ))
+    . stop @ambience
     . show @kaemon
     . set @kaemon, image neutral
     . move @kaemon, x 50%, y 100%, xAnchor 45%, yAnchor 100%, :500
 
     (( n: Kaemon?! ))
 
+    . set @ambience, track horror
+    . play @ambience
     . set @milo, image shocked
 
     (( n: Kaemon had somehow managed to spot us and was staring daggers into Adrian. ))
@@ -763,7 +770,7 @@
 
     (( k: I... ))
 
-    . show @ghost, effect slide, direction top, :700
+    . show @ghost, :700
     . wait
     . hide @ghost, :500
     . break
@@ -772,7 +779,7 @@
 
     (( n: Was... What was that behind him? ))
 
-    . move @kaemon, x 65%, y 100%, xAnchor 45%, yAnchor 100%, :2000
+    . move @kaemon, x 60%, y 100%, xAnchor 45%, yAnchor 100%, :2000
 
     (( k: Nobody's gonna take you away from me!                     I'll kill them before that ever happens! ))
 
@@ -789,6 +796,9 @@
     (( n: I darted up the stairs.                           Adrian quickly followed. ))
 
     . hide @hana, :500
+
+    . break
+
     . hide @milo, :500
 
     (( k: Hey! ))
@@ -825,13 +835,44 @@
 
     (( n: We touched the suit of armor, and-- ))
 
+    . stop @ambience
+
     (( v: Antique Paladin has joined your party. ))
 
     (( h: Huh? ))
 
+    . set @backgrounds, image rpg
+    . set @ambience, track 8bit
+    . set @hana, image hanaright, :0
+    . set @milo, image matthewright, :0   
+    . set @paladin, image paladinright, :0
+    . set @hhealth, image hhealth, :0
+    . set @mhealth, image mhealth, :0
+    . set @phealth, image phealth, :0
+    . set @ghost, image ghost, :0
+
+    . move @hana, x 10%, y 72%, xAnchor 45%, yAnchor 100%, :0
+    . move @milo, x 30%, y 70%, xAnchor 45%, yAnchor 100%, :0
+    . move @paladin, x 50%, y 74%, xAnchor 45%, yAnchor 100%, :0
+    . move @hhealth, x 11%, y 20%, xAnchor 45%, yAnchor 100%, :0
+    . move @mhealth, x 35%, y 20%, xAnchor 45%, yAnchor 100%, :0
+    . move @phealth, x 58%, y 20%, xAnchor 45%, yAnchor 100%, :0
+    . move @ghost, x 70%, y 70%, xAnchor 45%, yAnchor 100%, :0
+
+    . play @ambience
+
+    . show @hana
+    . show @milo
+    . show @paladin
+    . show @hhealth
+    . show @mhealth
+    . show @phealth
+
     (( n: Matthew: Where... are we? ))
 
     (( n: Hana: An RPG... ))
+
+    . show @ghost, effect fade
 
     (( n: Random encounter: A Ghost attacks! ))
 
@@ -854,11 +895,37 @@
 
     (( n: Antique Paladin attacks... ))
 
+    . move @paladin, x 60%, y 74%, xAnchor 45%, yAnchor 100%, :900
+    . set @sfx, track attack
+    . play @sfx
+
+    . break
+
+    . move @paladin, x 50%, y 74%, xAnchor 45%, yAnchor 100%, :900
+
+    . break
+
     (( n: Ghost loses 0 HP. ))
 
     (( n: Ghost attacks... ))
 
+    . move @ghost, x 60%, y 70%, xAnchor 45%, yAnchor 100%, :900
+    . set @sfx, track attack
+    . play @sfx
+
+    . break
+
     (( n: Antique Paladin loses 9999 HP. ))
+
+    . set @sfx, track nohealth
+    . play @sfx
+
+    . break
+
+    . hide @paladin, :100
+    . set @paladin, image dedz, :0
+    . move @paladin, x 50%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . show @paladin, :100
 
     (( n: Antique Paladin has been defeated. ))
 
@@ -870,9 +937,32 @@
 
     (( n: Antique Paladin's defense increased. ))
 
+    . set @sfx, track defend
+    . play @sfx
+
+    . break
+
     (( n: Ghost attacks... ))
 
+    . move @ghost, x 60%, y 70%, xAnchor 45%, yAnchor 100%, :500
+    . set @sfx, track attack
+    . play @sfx
+
+    . break
+
     (( n: Antique Paladin loses 9999 HP. ))
+
+    . set @sfx, track nohealth
+    . play @sfx
+    . shake
+
+    . break
+
+    . hide @paladin, :100
+    . set @paladin, image dedz, :0
+    . move @paladin, x 50%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . show @paladin, :100
+    
 
     (( n: Antique Paladin has been defeated. ))
 
@@ -900,6 +990,8 @@
 
     (( n: Matthew: I don't know! ))
 
+    . move @ghost, x 50%, y 70%, xAnchor 45%, yAnchor 100%, :500
+
     (( n: It is Matthew's turn... ))
 
     . choice :
@@ -913,11 +1005,38 @@
 
     (( n: Matthew attacks... ))
 
+    . move @milo, x 40%, y 70%, xAnchor 45%, yAnchor 100%, :500
+    . set @sfx, track attack
+    . play @sfx
+
+    . wait
+
+    . move @milo, x 30%, y 70%, xAnchor 45%, yAnchor 100%, :700
+
+    . break
+
     (( n: Ghost loses 0 HP. ))
 
     (( n: Ghost attacks... ))
 
+    . move @ghost, x 40%, y 70%, xAnchor 45%, yAnchor 100%, :500
+    . set @sfx, track attack
+    . play @sfx
+
+    . break
+
     (( n: Matthew loses 9999 HP. ))
+
+    . set @sfx, track nohealth
+    . play @sfx
+    . shake
+
+    . break
+
+    . hide @milo, :100
+    . set @milo, image dedzz, :0
+    . move @milo, x 30%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . show @milo, :100
 
     (( n: Matthew has been defeated. ))
 
@@ -929,9 +1048,31 @@
 
     (( n: Matthew's defense increased. ))
 
+    . set @sfx, track defend
+    . play @sfx
+
+    . break
+
     (( n: Ghost attacks... ))
 
+    . move @ghost, x 35%, y 70%, xAnchor 45%, yAnchor 100%, :500
+    . set @sfx, track attack
+    . play @sfx
+
+    . break
+
     (( n: Matthew loses 9999 HP. ))
+
+    . set @sfx, track nohealth
+    . play @sfx
+    . shake
+
+    . break
+
+    . hide @milo, :100
+    . set @milo, image dedzz, :0
+    . move @milo, x 30%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . show @milo, :100
 
     (( n: Matthew has been defeated. ))
 
@@ -955,6 +1096,8 @@
 
     (( n: Hana: Matthew! ))
 
+    . move @ghost, x 30%, y 70%, xAnchor 45%, yAnchor 100%, :500
+
     (( n: It is Hana's turn... ))
 
     . choice :
@@ -968,15 +1111,43 @@
 
     (( n: Hana attacks... ))
 
+    . move @hana, x 20%, y 72%, xAnchor 45%, yAnchor 100%, :500
+    . set @sfx, track attack
+    . play @sfx
+
+    . wait
+
+    . move @hana, x 10%, y 72%, xAnchor 45%, yAnchor 100%, :700
+
+    . break
+
     (( n: Ghost loses 0 HP. ))
 
     (( n: Hana: W-Wait! No! ))
 
     (( n: Ghost attacks... ))
 
+    . move @ghost, x 20%, y 70%, xAnchor 45%, yAnchor 100%, :500
+    . set @sfx, track attack
+    . play @sfx
+
+    . break
+
     (( n: Hana loses 9999 HP. ))
 
-    (( n: Matthew has been defeated. ))
+    . set @sfx, track nohealth
+    . play @sfx
+    . shake
+
+    . break
+
+    . hide @hana, :100
+    . set @hana, image dedzzz, :0
+    . move @hana, x 10%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . show @hana, :100
+    
+
+    (( n: Hana has been defeated. ))
 
     . goto scene hanadefeat
 
@@ -986,11 +1157,34 @@
 
     (( n: Hana's defense increased. ))
 
+    . set @sfx, track defend
+    . play @sfx
+
+    . break
+
     (( n: Hana: W-Wait! No! ))
 
     (( n: Ghost attacks... ))
 
+    . move @ghost, x 20%, y 70%, xAnchor 45%, yAnchor 100%, :500
+    . set @sfx, track attack
+    . play @sfx
+
+    . break
+
     (( n: Hana loses 9999 HP. ))
+
+    . set @sfx, track nohealth
+    . play @sfx
+    . shake
+
+    . break
+
+    . hide @hana, :100
+    . set @hana, image dedzzz, :0
+    . move @hana, x 10%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . show @hana, :100
+    
 
     (( n: Hana has been defeated. ))
 
