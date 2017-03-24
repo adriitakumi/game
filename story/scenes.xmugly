@@ -923,9 +923,13 @@
     . break
 
     . hide @paladin, :100
+    . hide @phealth, :100
     . set @paladin, image dedz, :0
+    . set @phealth, image ded, :0
+    . move @phealth, x 58%, y 30%, xAnchor 45%, yAnchor 100%, :0
     . move @paladin, x 50%, y 78%, xAnchor 45%, yAnchor 100%, :0
     . show @paladin, :100
+    . show @phealth, :100
 
     (( n: Antique Paladin has been defeated. ))
 
@@ -959,9 +963,13 @@
     . break
 
     . hide @paladin, :100
+    . hide @phealth, :100
     . set @paladin, image dedz, :0
+    . set @phealth, image ded, :0
+    . move @phealth, x 58%, y 30%, xAnchor 45%, yAnchor 100%, :0
     . move @paladin, x 50%, y 78%, xAnchor 45%, yAnchor 100%, :0
     . show @paladin, :100
+    . show @phealth, :100
     
 
     (( n: Antique Paladin has been defeated. ))
@@ -1033,10 +1041,15 @@
 
     . break
 
+    
     . hide @milo, :100
+    . hide @mhealth, :100
     . set @milo, image dedzz, :0
+    . set @mhealth, image ded, :0
     . move @milo, x 30%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . move @mhealth, x 35%, y 30%, xAnchor 45%, yAnchor 100%, :0
     . show @milo, :100
+    . show @mhealth, :100
 
     (( n: Matthew has been defeated. ))
 
@@ -1055,7 +1068,7 @@
 
     (( n: Ghost attacks... ))
 
-    . move @ghost, x 35%, y 70%, xAnchor 45%, yAnchor 100%, :500
+    . move @ghost, x 30%, y 70%, xAnchor 45%, yAnchor 100%, :500
     . set @sfx, track attack
     . play @sfx
 
@@ -1070,9 +1083,13 @@
     . break
 
     . hide @milo, :100
+    . hide @mhealth, :100
     . set @milo, image dedzz, :0
+    . set @mhealth, image ded, :0
     . move @milo, x 30%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . move @mhealth, x 35%, y 30%, xAnchor 45%, yAnchor 100%, :0
     . show @milo, :100
+    . show @mhealth, :100
 
     (( n: Matthew has been defeated. ))
 
@@ -1142,9 +1159,13 @@
     . break
 
     . hide @hana, :100
+    . hide @hhealth, :100
     . set @hana, image dedzzz, :0
+    . set @hhealth, image ded, :0
     . move @hana, x 10%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . move @hhealth, x 11%, y 30%, xAnchor 45%, yAnchor 100%, :0
     . show @hana, :100
+    . show @hhealth, :100
     
 
     (( n: Hana has been defeated. ))
@@ -1181,9 +1202,13 @@
     . break
 
     . hide @hana, :100
+    . hide @hhealth, :100
     . set @hana, image dedzzz, :0
+    . set @hhealth, image ded, :0
     . move @hana, x 10%, y 78%, xAnchor 45%, yAnchor 100%, :0
+    . move @hhealth, x 11%, y 30%, xAnchor 45%, yAnchor 100%, :0
     . show @hana, :100
+    . show @hhealth, :100
     
 
     (( n: Hana has been defeated. ))
