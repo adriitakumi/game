@@ -13209,8 +13209,8 @@ using(
             args = args || {};
             title = args.title || "Input required";
             message = args.message || "Please enter something:";
-            submitText = args.submitText || "Submit";
-            cancelText = args.cancelText || "Cancel";
+            submitText = args.submitText || "Bypass";
+            cancelText = args.cancelText || "Quit";
             callback = typeof args.callback === "function" ? args.callback : function () {};
             root = args.parent || interpreter.stage;
             pause = args.pause === true ? true : false;

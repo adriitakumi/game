@@ -64,6 +64,27 @@
 
 --
 
+. character name si, textbox tb_main :
+    . displayname :
+        Simon
+    --
+
+--
+
+. character name fv, textbox tb_main :
+    . displayname :
+        Female Voice
+    --
+
+--
+
+. character name mv, textbox tb_main :
+    . displayname :
+        Male Voice
+    --
+
+--
+
 . character name av, textbox tb_main :
     . displayname :
         Another Voice
@@ -85,6 +106,13 @@
 . imagepack name backgrounds, x 0, y 0, z 5, width 1366px :
     . image src assets/images/hallway.png, name hallway
     . image src assets/images/festival.jpg, name festival
+    . image src assets/images/rpgbg.jpg, name rpg
+    . image src assets/images/livingroom.png, name lroom
+    . image src assets/images/livingroombox.png, name box
+    . image src assets/images/livingroom404.png, name 404
+    . image src assets/images/lab.png, name lab
+    . image src assets/images/games.png, name games
+    . image src assets/images/sunset.png, name sunset
 --
 
 
@@ -95,6 +123,9 @@
     . image src assets/images/hana/sad.png, name sad
     . image src assets/images/hana/depress.png, name depress
     . image src assets/images/hana/angery.png, name angery
+    . image src assets/images/8bit/hana.png, name hana
+    . image src assets/images/8bit/hanaright.png, name hanaright
+    . image src assets/images/hana/ded.png, name dedzzz
 --
 
 . imagepack name sen, x 50%, y 0, z 10, xAnchor 50% :
@@ -102,8 +133,16 @@
     . image src assets/images/sen/huh.png, name huh
 --
 
-. imagepack name ghost, x 50%, y 0, z 10, xAnchor 50% :
+. imagepack name ghost, x 50%, y 0, z 20, xAnchor 50% :
     . image src assets/images/ghost/smile.png, name smile
+    . image src assets/images/8bit/ghost.png, name ghost
+    . image src assets/images/ghost/mataleft.png, name mataleft
+    . image src assets/images/ghost/mata.png, name mata
+    . image src assets/images/ghost/nomata.png, name nomata
+    . image src assets/images/ghost/nomataleft.png, name nomataleft
+    . image src assets/images/ghost/1.png, name 1
+    . image src assets/images/ghost/2.png, name 2
+    . image src assets/images/ghost/3.png, name 3
 --
 
 . imagepack name kaemon, x 50%, y 0, z 10, xAnchor 50% :
@@ -114,32 +153,23 @@
 --
 
 
-. imagepack name anmum, x 50%, y 0, z 10, xAnchor 50% :
-    . image src assets/images/anmum/aaa.png, name smile
-    . image src assets/images/anmum/margaret_ambition.png, name scheming
-    . image src assets/images/anmum/Margaret_angry.png, name angry
-    . image src assets/images/anmum/margaret_apathetic.png, name wapakels
-    . image src assets/images/anmum/Margaret_apoligetic.png, name apologetic
-    . image src assets/images/anmum/margaret_cruelty.png, name cruel
-    . image src assets/images/anmum/margaret_disappointed.png, name sad
-    . image src assets/images/anmum/margaret_doubtful.png, name doubt
-    . image src assets/images/anmum/Margaret_hurt.png, name hurt
-    . image src assets/images/anmum/margaret_pathetic.png, name pathetic
-    . image src assets/images/anmum/margaret_unhappy.png, name sad
+. imagepack name anna, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/rika/nomata.png, name mata
 --
 
-. imagepack name nido, x 50%, y 0, z 10, xAnchor 50% :
-    . image src assets/images/kazuma/kazuma-angry.png, name angry
-    . image src assets/images/kazuma/kazuma-closed eyes.png, name close
-    . image src assets/images/kazuma/kazuma-Happy.png, name happy
-    . image src assets/images/kazuma/kazuma-normal.png, name neutral
-    . image src assets/images/kazuma/kazuma-Sad.png, name sad
-    . image src assets/images/kazuma/kazuma-shocked.png, name shocked
-    . image src assets/images/kazuma/kazuma-Shy.png, name shy
-    . image src assets/images/kazuma/kazuma-smile.png, name smile
-    . image src assets/images/kazuma/kazuma-straight.png, name straight
-    . image src assets/images/kazuma/kazuma-Thinking.png, name think
-    . image src assets/images/kazuma/kazuma-worried.png, name worried
+. imagepack name hhealth, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/8bit/hhealth.png, name hhealth
+    . image src assets/images/8bit/1.png, name ded
+--
+
+. imagepack name mhealth, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/8bit/mhealth.png, name mhealth
+    . image src assets/images/8bit/2.png, name ded
+--
+
+. imagepack name phealth, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/8bit/phealth.png, name phealth
+    . image src assets/images/8bit/3.png, name ded
 --
 
 . imagepack name milo, x 50%, y 0, z 10, xAnchor 50% :
@@ -151,37 +181,15 @@
     . image src assets/images/ryouma/shocked.png, name shocked
     . image src assets/images/ryouma/smile.png, name smile
     . image src assets/images/ryouma/thinking.png, name think
+    . image src assets/images/8bit/matt.png, name matthew
+    . image src assets/images/8bit/mattright.png, name matthewright
+    . image src assets/images/ryouma/ded.png, name dedzz
 --
 
-. imagepack name energen, x 50%, y 0, z 10, xAnchor 50% :
-    . image src assets/images/rika/rika-angery.png, name angry
-    . image src assets/images/rika/rika-determined.png, name determined
-    . image src assets/images/rika/rika-frown.png, name frown
-    . image src assets/images/rika/rika-happy.png, name happy
-    . image src assets/images/rika/rika-idk.png, name idk
-    . image src assets/images/rika/rika-muchhappier.png, name joy
-    . image src assets/images/rika/rika-sad.png, name sad
-    . image src assets/images/rika/rika-shocked.png, name shocked
-    . image src assets/images/rika/rika-shy.png, name shy
-    . image src assets/images/rika/rika-thinking.png, name think
-    . image src assets/images/rika/rika-worried.png, name worried
-    . image src assets/images/rika/rika-worriedulit.png, name worried2
---
-
-. imagepack name cecile, x 50%, y 0, z 10, xAnchor 50% :
-    . image src assets/images/cecile/smile.png, name smile
-    . image src assets/images/cecile/amused-smiling.png, name amused
-    . image src assets/images/cecile/smile-blush.png, name blush
-    . image src assets/images/cecile/shy-or-surprise.png, name shy
-    . image src assets/images/cecile/shy-or-surprise-without-blush.png, name surprised
-    . image src assets/images/cecile/crying.png, name crying
---
-
-. imagepack name jack, x 50%, y 0, z 10, xAnchor 50% :
-    . image src assets/images/jack/grin.png, name grin
-    . image src assets/images/jack/neutral.png, name neutral
-    . image src assets/images/jack/scold.png, name scold
-    . image src assets/images/jack/smile.png, name smile
+. imagepack name paladin, x 50%, y 0, z 10, xAnchor 50% :
+    . image src assets/images/8bit/pala.png, name paladin
+    . image src assets/images/8bit/palaright.png, name paladinright
+    . image src assets/images/8bit/ded.png, name dedz
 --
 
 . imagepack name logo, x 50%, y 0, z 10, xAnchor 50% :
@@ -189,3 +197,37 @@
 --
 
 . curtain name bgcolor, color black, z 0
+. curtain name white, color white, z 0
+
+. audio name ambience, loop true, fade true :
+    . track title classroom :
+        . source href assets/audio/classroom.mp3, type mp3
+    --
+    . track title festival :
+        . source href assets/audio/festival.mp3, type mp3
+    --
+    . track title horror :
+        . source href assets/audio/horror.mp3, type mp3
+    --
+    . track title error :
+        . source href assets/audio/error.mp3, type mp3
+    --
+    . track title 8bit :
+        . source href assets/audio/8bit.mp3, type mp3
+    --
+--
+
+. audio name sfx :
+    . track title attack :
+        . source href assets/audio/attack.mp3, type mp3
+    --
+    . track title nohealth :
+        . source href assets/audio/nohealth.mp3, type mp3
+    --
+    . track title defend :
+        . source href assets/audio/defend.mp3, type mp3
+    --
+    . track title shout :
+        . source href assets/audio/shout.mp3, type mp3
+    --
+--
